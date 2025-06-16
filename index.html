@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Mutuku Mutua - Pioneer in STEM & Education Innovator</title>
+    <meta name="description" content="Official personal and professional profile of Dominic Mutuku Mutua, a pioneering STEM educator at St. Anna's Girls High School, Nairobi. Discover his achievements, innovative projects like SmartSkoo.click, and his bid for KUPPET Organising Secretary.">
+    <meta name="keywords" content="Dominic Mutuku Mutua, STEM educator, St. Anna's Girls High School, Nairobi, education innovation, SmartSkoo.click, KUPPET Organising Secretary, app development, technology in education, Kenya education">
+    <meta name="author" content="Dominic Mutuku Mutua">
+    <meta name="geo.placename" content="Nairobi CBD">
+    <meta name="geo.position" content="-1.286389;36.817222">
+    <meta name="geo.region" content="KE-030">
+    <meta name="DC.title" content="Dominic Mutuku Mutua - Professional Profile">
+    <link rel="canonical" href="https://yourwebsite.com/dominic-mutuku-mutua" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #007BFF; /* A vibrant blue for primary elements */
+            --secondary-color: #28a745; /* A success green for accents */
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+            --bg-light: #ffffff;
+            --bg-dark: #f0f2f5;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            --transition-speed: 0.5s ease-out;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #0056b3);
+            color: var(--text-light);
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden; /* For background animation */
+            box-shadow: var(--card-shadow);
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.05);
+            transform: rotate(45deg);
+            animation: moveBackground 20s infinite linear;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: rotate(0deg) translate(0,0); }
+            100% { transform: rotate(360deg) translate(100px, 100px); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid var(--text-light);
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); /* Ripple effect */
+            animation: ripple 0.6s linear infinite;
+        }
+
+        @keyframes ripple {
+            0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+
+
+        .header h1 {
+            font-size: 3.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.4em;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .header .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+        }
+
+        .header .cta-button:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+            overflow: hidden; /* For content animations */
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--bg-dark);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Icon Categories (Skills/Roles/Achievements) */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .category-item {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            flex: 1 1 calc(33% - 60px); /* Adjust for responsive 3-column layout */
+            min-width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0; /* Hidden by default for scroll reveal */
+            transform: translateY(20px); /* Initial position for animation */
+        }
+
+        .category-item.reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .category-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .category-item .material-icons {
+            font-size: 3.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .category-item h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .category-item ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .category-item ul li {
+            font-size: 1em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        .category-item ul li .material-icons {
+            font-size: 1.2em;
+            margin-right: 8px;
+            color: var(--secondary-color);
+        }
+
+        /* Projects Section */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0; /* Hidden by default for scroll reveal */
+            transform: translateY(20px); /* Initial position for animation */
+        }
+
+        .project-card.reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .project-content p {
+            font-size: 1em;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .project-content .project-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-content .project-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Political Section */
+        .political-section .content {
+            background-color: #fff3cd; /* Light warning yellow */
+            border: 1px solid #ffeeba;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            margin-top: 30px;
+            color: #856404; /* Darker yellow text */
+        }
+
+        .political-section .content h3 {
+            font-size: 2em;
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .political-section .content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .political-section .content .cta-button {
+            background-color: #f7b828; /* A more vibrant yellow for the button */
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .political-section .content .cta-button:hover {
+            background-color: #e0a800;
+        }
+
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-content p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            color: var(--text-dark);
+            background-color: var(--bg-dark);
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            background-color: #e2e6ea;
+        }
+
+        .contact-item .material-icons {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.8em;
+        }
+
+        .social-media {
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 15px;
+            color: var(--primary-color);
+            font-size: 2.8em;
+            transition: transform 0.2s ease, color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            transform: translateY(-5px);
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header h1 {
+                font-size: 2.8em;
+            }
+            .header p {
+                font-size: 1.2em;
+            }
+            .category-item {
+                flex: 1 1 calc(50% - 40px); /* 2 columns on medium screens */
+            }
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-image {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 0;
+            }
+            .header h1 {
+                font-size: 2.2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            .category-item {
+                flex: 1 1 100%; /* 1 column on small screens */
+            }
+            .project-card {
+                margin: 0 auto;
+                max-width: 400px; /* Constrain width for single column */
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animations for Material IO Feel */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <img src="mutua.jpg" alt="Dominic Mutuku Mutua Profile" class="profile-image">
+            <h1>Dominic Mutuku Mutua</h1>
+            <p>Pioneer in STEM Education | Visionary Innovator | Dedicated Teacher at St. Anna's Girls High School, Nairobi</p>
+            <a href="#contact" class="cta-button">Connect with Dominic</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="reveal-on-scroll">
+            <h2>About Dominic Mutuku Mutua</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Dominic Mutuku Mutua is a dynamic and passionate educator, widely recognized as a pioneer in STEM (Science, Technology, Engineering, and Mathematics) education in Kenya. With a profound commitment to nurturing the next generation of innovators, he has dedicated his career to empowering students with critical thinking skills and a love for technological advancement.</p>
+                    <p>Currently, Dominic serves as a highly respected teacher at **St. Anna's Girls High School in Nairobi**, where he inspires young women to break barriers in STEM fields. His teaching methodologies are known for being engaging, hands-on, and forward-thinking, preparing students not just for exams, but for real-world challenges.</p>
+                    <p>Beyond the classroom, Dominic is a fervent advocate for educational reform and technological integration. He believes in creating accessible and revolutionary learning experiences for all. His vision extends to shaping the future of education in Kenya and beyond.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x300/28a745/FFFFFF?text=Dominic+Teaching" alt="Dominic Mutuku Mutua teaching">
+                </div>
+            </div>
+        </section>
+
+        <section id="roles-achievements" class="reveal-on-scroll">
+            <h2>Roles & Achievements</h2>
+            <div class="categories">
+                <div class="category-item reveal-on-scroll">
+                    <span class="material-icons">school</span>
+                    <h3>Current Role</h3>
+                    <ul>
+                        <li><span class="material-icons">done</span>STEM Teacher, St. Anna's Girls High School, Nairobi</li>
+                        <li><span class="material-icons">done</span>Curriculum Developer & Innovator</li>
+                        <li><span class="material-icons">done</span>Mentor for Young Innovators</li>
+                    </ul>
+                </div>
+                <div class="category-item reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <span class="material-icons">emoji_events</span>
+                    <h3>Key Achievements</h3>
+                    <ul>
+                        <li><span class="material-icons">done</span>Pioneering STEM integration in high school curriculum</li>
+                        <li><span class="material-icons">done</span>Significant improvement in student performance in science competitions</li>
+                        <li><span class="material-icons">done</span>Successful implementation of various tech-based learning initiatives</li>
+                        <li><span class="material-icons">done</span>Recognized for outstanding contribution to education</li>
+                    </ul>
+                </div>
+                <div class="category-item reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <span class="material-icons">lightbulb</span>
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li><span class="material-icons">done</span>Educational Technology Integration</li>
+                        <li><span class="material-icons">done</span>Curriculum Design & Development</li>
+                        <li><span class="material-icons">done</span>Coding & App Development (Python, Java, etc.)</li>
+                        <li><span class="material-icons">done</span>Robotics & AI Fundamentals</li>
+                        <li><span class="material-icons">done</span>Project-Based Learning Facilitation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal-on-scroll">
+            <h2>Transformative Projects</h2>
+            <div class="project-grid">
+                <div class="project-card reveal-on-scroll">
+                    <img src="https://via.placeholder.com/500x300/007BFF/FFFFFF?text=SmartSkoo.click" alt="SmartSkoo.click App Image">
+                    <div class="project-content">
+                        <h3>SmartSkoo.click</h3>
+                        <p>Dominic is spearheading the development of **SmartSkoo.click**, an innovative educational app poised to revolutionize learning. This platform aims to provide personalized learning experiences, interactive content, and seamless communication between students, teachers, and parents, making education more accessible and engaging for all.</p>
+                        <a href="https://smartskoo.click" target="_blank" class="project-link">Learn More about SmartSkoo.click</a>
+                    </div>
+                </div>
+                <div class="project-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <img src="https://via.placeholder.com/500x300/28a745/FFFFFF?text=Robotics+Club" alt="Robotics Club Project Image">
+                    <div class="project-content">
+                        <h3>School Robotics Club</h3>
+                        <p>Under his guidance, St. Anna's Girls High School has established a thriving Robotics Club. Students learn to design, build, and program robots, participating in national and regional competitions. This initiative fosters problem-solving skills and a practical understanding of engineering principles.</p>
+                        <a href="#" class="project-link">View Robotics Projects (Coming Soon)</a>
+                    </div>
+                </div>
+                <div class="project-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <img src="https://via.placeholder.com/500x300/FFC107/333333?text=Community+STEM" alt="Community STEM Outreach Image">
+                    <div class="project-content">
+                        <h3>Community STEM Outreach</h3>
+                        <p>Dominic is actively involved in community outreach programs, bringing STEM education to underserved areas. He organizes workshops and mentorship sessions to inspire younger students and bridge the educational gap, promoting inclusivity in tech learning.</p>
+                        <a href="#" class="project-link">Explore Outreach Initiatives (Coming Soon)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kuppet-bid" class="reveal-on-scroll">
+            <h2>Vying for KUPPET Organising Secretary</h2>
+            <div class="political-section">
+                <div class="content">
+                    <h3>Empowering Teachers, Shaping the Future of Education</h3>
+                    <p>Dominic Mutuku Mutua is also a strong advocate for teachers' welfare and professional development. He is currently vying for the prestigious post of **Organising Secretary for KUPPET (Kenya Union of Post Primary Education Teachers)**. His campaign focuses on:</p>
+                    <ul>
+                        <li><span class="material-icons">check_circle</span> Advocating for improved working conditions and remuneration for teachers.</li>
+                        <li><span class="material-icons">check_circle</span> Enhancing professional development opportunities, especially in STEM and Ed-Tech.</li>
+                        <li><span class="material-icons">check_circle</span> Promoting ethical leadership and transparency within the union.</li>
+                        <li><span class="material-icons">check_circle</span> Fostering collaboration and innovation among educators.</li>
+                    </ul>
+                    <p>With his proven leadership and dedication, Dominic aims to bring a fresh perspective and vigorous representation to KUPPET, ensuring that the voices of teachers are heard and their crucial role in nation-building is fully supported.</p>
+                    <a href="#contact" class="cta-button">Support Dominic's Campaign</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container contact-content">
+            <h2>Get in Touch with Dominic</h2>
+            <p>I'm always open to discussing new ideas, collaborations, or opportunities in education and technology. Feel free to reach out!</p>
+            <div class="contact-info">
+                <a href="https://wa.me/254715077762" target="_blank" class="contact-item">
+                    <span class="material-icons">whatsapp</span>
+                    <span>+254 715 077762</span>
+                </a>
+                <a href="mailto:dominic.mutuku.mutua@example.com" class="contact-item">
+                    <span class="material-icons">email</span>
+                    <span>dominic.mutuku.mutua@example.com</span>
+                </a>
+                <div class="contact-item">
+                    <span class="material-icons">location_on</span>
+                    <span>Nairobi CBD</span>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://twitter.com/yourtwitterhandle" target="_blank" aria-label="Dominic Mutuku Mutua Twitter"><img src="https://img.icons8.com/ios-filled/50/007BFF/twitterx.png" alt="Twitter"></a>
+                <a href="https://instagram.com/yourinstagramhandle" target="_blank" aria-label="Dominic Mutuku Mutua Instagram"><img src="https://img.icons8.com/ios-filled/50/007BFF/instagram-new--v1.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank" aria-label="Dominic Mutuku Mutua LinkedIn"><img src="https://img.icons8.com/ios-filled/50/007BFF/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            <p>&copy; 2025 Dominic Mutuku Mutua. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Reveal Animation (for categories and projects)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+        const observerOptions = {
+            root: null, /* viewport */
+            rootMargin: '0px',
+            threshold: 0.1 /* 10% of element visible to trigger */
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Stop observing once it's visible if you only want it to animate once
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // Material IO like animation for image (already in CSS with ripple effect)
+        // No additional JS needed for the ripple animation as it's CSS-based.
+    </script>
+</body>
+</html>
