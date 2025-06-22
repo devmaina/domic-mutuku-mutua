@@ -95,13 +95,14 @@ footer.section {
   margin-top: 0.7rem;
 }
 .navbar {
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: linear-gradient(90deg, #007BFF 60%, #28a745 100%);
+  border-bottom: 3px solid #f7b828;
   position: fixed;
   width: 100%;
   z-index: 100;
   top: 0;
   left: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 .navbar .container {
   display: flex;
@@ -113,8 +114,9 @@ footer.section {
 }
 .navbar .logo {
   font-weight: 700;
-  color: var(--primary);
-  font-size: 1.05rem;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 .navbar ul {
   list-style: none;
@@ -125,18 +127,16 @@ footer.section {
 }
 .navbar a {
   text-decoration: none;
-  color: var(--text);
+  color: #fff;
   font-weight: 500;
   font-size: 0.97rem;
-  transition: color 0.2s;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 .navbar a:hover {
-  color: var(--primary);
-}
-.slogan {
   color: #f7b828;
-  font-size: 1em;
-  margin: 0.1em 0;
+  border-bottom: 2px solid #f7b828;
 }
 @media (max-width: 900px) {
   .card-grid {
@@ -144,6 +144,7 @@ footer.section {
   }
 }
 @media (max-width: 600px) {
+  .navbar { display: none; }
   .navbar .container {
     flex-direction: column;
     align-items: flex-start;
@@ -167,4 +168,61 @@ footer.section {
     height: 50px;
   }
 }
+body, .container, .section, .section-header, .card-grid, .card, .footer, .copyright {
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.section-header {
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+.card-grid {
+  margin: 0 auto !important;
+}
+.card {
+  margin: 0 auto !important;
+}
 /* --- END REFACTOR --- */
+/* --- IMAGE/CONTENT SIDE-BY-SIDE LAYOUT --- */
+.section-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  padding: 1.2rem 1.5rem;
+}
+.section-flex .section-img-large {
+  width: 320px;
+  max-width: 40vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.section-flex .section-content {
+  flex: 1;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .section-flex {
+    width: 90vw;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .section-flex .section-img-large {
+    width: 100%;
+    max-width: 90vw;
+    margin-bottom: 0.5rem;
+  }
+  .section-flex .section-content {
+    text-align: center;
+  }
+}
+/* --- END IMAGE/CONTENT SIDE-BY-SIDE LAYOUT --- */
