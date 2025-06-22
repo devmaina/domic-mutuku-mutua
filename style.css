@@ -113,9 +113,10 @@ footer.section {
   padding: 0.3rem 1rem;
 }
 .navbar .logo {
-  font-weight: 700;
+  font-weight: 900;
   color: #fff;
   font-size: 1.1rem;
+  margin: 1.3vw ;
   letter-spacing: 1px;
 }
 .navbar ul {
@@ -144,29 +145,23 @@ footer.section {
   }
 }
 @media (max-width: 600px) {
-  .navbar { display: none; }
-  .navbar .container {
-    flex-direction: column;
-    align-items: flex-start;
+  .navbar { display: flex !important; flex-direction: row; align-items: center; justify-content: center; width: 100vw; }
+  .navbar ul { display: none !important; }
+  .navbar .logo { font-size: 1.2rem; padding: 0.7rem 0; color: #fff; }
+  .footer, footer.section {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    overflow-x: hidden !important;
   }
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-  .container {
-    margin-top: 3.5rem;
-  }
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .section-img {
-    width: 50px;
-    height: 50px;
-  }
+}
+.footer, footer.section {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 body, .container, .section, .section-header, .card-grid, .card, .footer, .copyright {
   text-align: center !important;
@@ -226,3 +221,22 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   }
 }
 /* --- END IMAGE/CONTENT SIDE-BY-SIDE LAYOUT --- */
+/* --- CARD HIGHLIGHT STYLE --- */
+.card-highlight {
+  border-bottom: 4px solid #f7b828;
+  box-shadow: 0 2px 8px rgba(247,184,40,0.08);
+}
+/* --- END CARD HIGHLIGHT STYLE --- */
+/* --- SECTION FLEX BORDER BOTTOM --- */
+.section-flex {
+  border-bottom: 4px solid #007BFF;
+}
+.section-flex.vision {
+  border-bottom: 4px solid #28a745;
+}
+@media (max-width: 900px) {
+  .section-flex, .section-flex.vision {
+    border-bottom-width: 3px;
+  }
+}
+/* --- END SECTION FLEX BORDER BOTTOM --- */
