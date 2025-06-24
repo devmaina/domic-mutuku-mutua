@@ -156,6 +156,22 @@ footer.section {
     padding-right: 0.5rem !important;
     overflow-x: hidden !important;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .container {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100vw;
+    padding: 0 0.5rem;
+  }
 }
 .footer, footer.section {
   width: 100%;
@@ -240,3 +256,56 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   }
 }
 /* --- END SECTION FLEX BORDER BOTTOM --- */
+/* --- REVEAL ON SCROLL ANIMATION --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* --- END REVEAL ON SCROLL ANIMATION --- */
+/* --- CONTACT SECTION CARD GRID ADJUSTMENTS --- */
+#contact .card-grid {
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+#contact .card {
+  padding: 0.5rem 0.3rem;
+  min-height: 80px;
+}
+@media (max-width: 600px) {
+  #contact .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+  #contact .card {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+}
+/* --- END CONTACT SECTION CARD GRID ADJUSTMENTS --- */
+/* --- HOBBIES SECTION CARD GRID ADJUSTMENTS --- */
+#hobbies .card-grid {
+  gap: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+#hobbies .card {
+  padding: 0.5rem 0.3rem;
+  min-height: 80px;
+}
+@media (max-width: 600px) {
+  #hobbies .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+  #hobbies .card {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+}
+/* --- END HOBBIES SECTION CARD GRID ADJUSTMENTS --- */

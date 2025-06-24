@@ -19,6 +19,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.section');
+        const revealOptions = {
+          threshold: 0.08
+        };
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              entry.target.classList.add('reveal-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, revealOptions);
+        sections.forEach(section => {
+          section.classList.add('reveal');
+          revealOnScroll.observe(section);
+        });
+      });
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -206,6 +226,7 @@ the transformation of union operations through digital integration and inclusive
             <a href="https://tiktok.com/@dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/tiktok.png" alt="TikTok"></a>
         </div>
         <p class="copyright">&copy; 2025 Mutua Dominic Mutuku. All rights reserved.</p>
+        <p class="site-credit">Site designed and supported by <a href="https://ibconcept.vip" target="_blank" rel="noopener"> <b>ibconcept</b></a></p>
     </footer>
     <script>
         // Smooth scroll for internal links
