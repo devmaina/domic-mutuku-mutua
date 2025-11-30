@@ -12,6 +12,103 @@
     <meta name="geo.region" content="KE-030">
     <meta name="DC.title" content="Mutua Dominic Mutuku - Campaign Profile">
     <link rel="canonical" href="https://yourwebsite.com/mutua-dominic-mutuku" />
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mutua Dominic Mutuku",
+        "jobTitle": "Candidate for Nairobi Branch Organizing Secretary, KUPPET",
+        "description": "Passionate educationist, researcher, and digital service provider committed to educational reform and teachers’ welfare through digital innovation.",
+        "image": "mutua.jpg",
+        "url": "https://yourwebsite.com/mutua-dominic-mutuku",
+        "sameAs": [
+          "https://twitter.com/MutuaMDominic",
+          "https://www.linkedin.com/in/dominic-mutua-b8257ab4",
+          "https://facebook.com/MutukuDMutua",
+          "https://instagram.com/dmutuku_mutua",
+          "https://threads.net/@dmutuku_mutua",
+          "https://tiktok.com/@dmutuku_mutua"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nairobi",
+          "addressRegion": "KE",
+          "addressCountry": "Kenya"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+254 715 077762",
+          "email": "dominicmutua96@mwalimu.tsc.go.ke",
+          "contactType": "customer service"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Jomo Kenyatta University of Agriculture and Technology"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "University of the People"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Pwani University"
+          }
+        ],
+        "knowsAbout": ["Education", "ICT Integration in Education", "Instructional Design", "Mathematics", "Physics", "Digital Literacy", "AI in Education"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "KUPPET Voting Date",
+        "startDate": "2026-01-31T00:00:00",
+        "endDate": "2026-01-31T23:59:59",
+        "location": {
+          "@type": "Place",
+          "name": "Kenya Institute Of Curriculum Development (KICD)",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "Kenya"
+          }
+        },
+        "description": "Voting for Nairobi Branch Organizing Secretary, KUPPET. Venue: Kenya Institute Of Curriculum Development (KICD).",
+        "organizer": {
+          "@type": "Organization",
+          "name": "KUPPET"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mutua Dominic Mutuku - Campaign Profile",
+        "url": "https://yourwebsite.com/mutua-dominic-mutuku",
+        "description": "Official campaign profile of Mutua Dominic Mutuku, candidate for Nairobi Branch Organizing Secretary - KUPPET. Explore his vision, manifesto, education, experience, publications, achievements, memberships, and hobbies.",
+        "author": {
+          "@type": "Person",
+          "name": "Mutua Dominic Mutuku"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Mutua Dominic Mutuku"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SmartSkool.click",
+        "description": "Innovative educational app for modern learning.",
+        "url": "https://smartskool.click",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "author": {
+          "@type": "Person",
+          "name": "Mutua Dominic Mutuku"
+        }
+      }
+    ]
+    </script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -81,7 +178,7 @@
                             <span id="minutes">00</span>
                             <p>Minutes</p>
                         </div>
-                        <div class="time-unit">
+                        <div class="time-unit" id="seconds-unit">
                             <span id="seconds">00</span>
                             <p>Seconds</p>
                         </div>
@@ -348,6 +445,7 @@ the transformation of union operations through digital integration and inclusive
         // Countdown Timer
         const targetDate = new Date('2026-01-31T00:00:00').getTime();
 
+        let lastSeconds = -1;
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = targetDate - now;
@@ -360,6 +458,11 @@ the transformation of union operations through digital integration and inclusive
                 document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
                 document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
                 document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+                if (seconds !== lastSeconds) {
+                    const secondsUnit = document.getElementById('seconds-unit');
+                    secondsUnit.classList.toggle('seconds-flash');
+                    lastSeconds = seconds;
+                }
             } else {
                 document.getElementById('countdown').innerHTML = '<p>Voting Day!</p>';
             }

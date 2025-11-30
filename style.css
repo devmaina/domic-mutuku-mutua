@@ -401,6 +401,17 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   font-weight: 500;
   text-transform: uppercase;
 }
+#seconds-unit {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.seconds-flash {
+  background: rgba(247, 184, 40, 0.4) !important;
+}
 .venue {
   font-size: 1.1rem;
   margin: 0.8rem 0;
