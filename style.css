@@ -431,15 +431,18 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
     font-size: 1rem;
   }
   #countdown {
-    flex-wrap: wrap;
-    gap: 0.4rem;
+    flex-wrap: nowrap;
+    gap: 0.3rem;
   }
   .time-unit {
-    min-width: 55px;
-    padding: 0.6rem;
+    min-width: 45px;
+    padding: 0.4rem;
   }
   .time-unit span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .time-unit p {
+    font-size: 0.7rem;
   }
   .venue, .cta {
     font-size: 0.9rem;
