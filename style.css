@@ -430,6 +430,7 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
     padding: 0.3rem 0.2rem;
   }
   .timer-container {
+    flex-direction: column;
     gap: 0.3rem;
   }
   .countdown-img {
