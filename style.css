@@ -126,6 +126,11 @@ footer.section {
   margin: 0;
   padding: 0;
 }
+.navbar ul li {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+}
 .navbar a {
   text-decoration: none;
   color: #fff;
@@ -139,15 +144,31 @@ footer.section {
   color: #f7b828;
   border-bottom: 2px solid #f7b828;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
-  .navbar { display: flex !important; flex-direction: row; align-items: center; justify-content: center; width: 100vw; }
-  .navbar ul { display: none !important; }
-  .navbar .logo { font-size: 1.2rem; padding: 0.7rem 0; color: #fff; }
+  .hamburger { display: flex !important; }
+  .navbar ul { display: none; }
+  .navbar ul.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: linear-gradient(90deg, #007BFF 60%, #28a745 100%); padding: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .navbar ul.active li { margin: 0.5rem 0; }
+  .navbar ul.active a { padding: 0.5rem 1rem; display: block; }
+  .navbar .logo { font-size: 1.2rem; padding: 0.7rem 0; color: #fff; margin-right: 3rem; }
   .footer, footer.section {
     width: 100vw !important;
     max-width: 100vw !important;
@@ -276,6 +297,11 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   padding: 0.5rem 0.3rem;
   min-height: 80px;
 }
+
+
+
+
+
 @media (max-width: 600px) {
   #contact .card-grid {
     grid-template-columns: 1fr !important;
@@ -309,3 +335,103 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   }
 }
 /* --- END HOBBIES SECTION CARD GRID ADJUSTMENTS --- */
+/* --- VOTING TIMER SECTION STYLES --- */
+#voting-timer {
+  background: linear-gradient(135deg, #007BFF 0%, #28a745 100%);
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.countdown-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.timer-content {
+  text-align: center;
+  flex: 1;
+}
+.timer-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.date {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.time-unit {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.8rem;
+  min-width: 70px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.time-unit span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.time-unit.days span {
+  color: #f7b828;
+}
+.time-unit p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.venue {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+.cta {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.8rem 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+@media (max-width: 600px) {
+  .timer-container h1 {
+    font-size: 1.8rem;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  #countdown {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .time-unit {
+    min-width: 55px;
+    padding: 0.6rem;
+  }
+  .time-unit span {
+    font-size: 1.2rem;
+  }
+  .venue, .cta {
+    font-size: 0.9rem;
+  }
+}
+/* --- END VOTING TIMER SECTION STYLES --- */
