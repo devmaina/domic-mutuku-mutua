@@ -112,6 +112,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -140,7 +141,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <span class="logo"> Mutua</span>
+            <img src="splush-news-logo.jpeg" alt="Logo" class="logo">
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -186,6 +187,18 @@
                     <p class="venue">Venue: Kenya Institute Of Curriculum Development (KICD)</p>
                     <p class="cta">Vote Dominic Mutuku Mutua Organising Secretary Nairobi</p>
                     <p class="appeal">Save the day and help shape the future of education in Nairobi! Your vote matters – let's build a better tomorrow together.</p>
+                    <div class="share-section">
+                        <p>Share this moment:</p>
+                        <div class="share-buttons">
+                            <button onclick="shareTo('facebook')" class="share-btn"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></button>
+                            <button onclick="shareTo('whatsapp')" class="share-btn"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"></button>
+                            <button onclick="shareTo('instagram')" class="share-btn"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new--v1.png" alt="Instagram"></button>
+                            <button onclick="shareTo('linkedin')" class="share-btn"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn"></button>
+                            <button onclick="shareTo('tiktok')" class="share-btn"><img src="https://img.icons8.com/ios-filled/24/ffffff/tiktok.png" alt="TikTok"></button>
+                            <button onclick="copyLink()" class="share-btn copy-link"><img src="https://img.icons8.com/ios-filled/24/ffffff/link.png" alt="Copy Link"></button>
+                            <button onclick="shareSnapshot()" class="share-btn snapshot"><img src="https://img.icons8.com/ios-filled/24/ffffff/camera.png" alt="Snapshot"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -411,6 +424,7 @@ the transformation of union operations through digital integration and inclusive
             <a href="https://threads.net/@dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/threads.png" alt="Threads"></a>
             <a href="https://tiktok.com/@dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/tiktok.png" alt="TikTok"></a>
         </div>
+        <img src="splush-news-logo.jpeg" alt="Logo" style="width: 50px; height: auto; margin: 1rem 0;">
         <p class="copyright">&copy; 2025 Mutua Dominic Mutuku. All rights reserved.</p>
         <p class="site-credit">Site designed and supported by <a href="https://ibconcept.vip" target="_blank" rel="noopener"> <b>ibconcept</b></a></p>
     </footer>
@@ -489,6 +503,75 @@ the transformation of union operations through digital integration and inclusive
 
         // Material IO like animation for image (already in CSS with ripple effect)
         // No additional JS needed for the ripple animation as it's CSS-based.
+
+        // Share functions
+        function shareTo(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent("Vote Dominic Mutuku Mutua for Nairobi KUPPET Organizing Secretary! Check out the countdown to voting day.");
+            let shareUrl = '';
+
+            switch(platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${text}%20${url}`;
+                    break;
+                case 'instagram':
+                    // Instagram doesn't support direct sharing via URL, so copy to clipboard
+                    copyLink();
+                    alert('Link copied! Share manually on Instagram.');
+                    return;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'tiktok':
+                    // TikTok doesn't support direct sharing via URL, so copy to clipboard
+                    copyLink();
+                    alert('Link copied! Share manually on TikTok.');
+                    return;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Link copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = window.location.href;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Link copied to clipboard!');
+            });
+        }
+
+        function shareSnapshot() {
+            const element = document.getElementById('voting-timer');
+            html2canvas(element).then(canvas => {
+                canvas.toBlob(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'voting-timer-snapshot.png';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    alert('Snapshot downloaded! Share it on your preferred platform.');
+                });
+            }).catch(err => {
+                console.error('Snapshot failed: ', err);
+                alert('Failed to create snapshot. Please try again.');
+            });
+        }
     </script>
 </body>
 </html>

@@ -469,3 +469,66 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   }
 }
 /* --- END VOTING TIMER SECTION STYLES --- */
+/* --- SHARE SECTION STYLES --- */
+.share-section {
+  margin-top: 1.5rem;
+}
+.share-section p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.share-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.share-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+.share-btn img {
+  width: 20px;
+  height: 20px;
+}
+.copy-link {
+  background: rgba(247, 184, 40, 0.3);
+}
+.copy-link:hover {
+  background: rgba(247, 184, 40, 0.5);
+}
+.snapshot {
+  background: rgba(40, 167, 69, 0.3);
+}
+.snapshot:hover {
+  background: rgba(40, 167, 69, 0.5);
+}
+@media (max-width: 600px) {
+  .share-buttons {
+    gap: 0.3rem;
+  }
+  .share-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .share-btn img {
+    width: 18px;
+    height: 18px;
+  }
+}
+/* --- END SHARE SECTION STYLES --- */
