@@ -299,7 +299,43 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   box-shadow: 0 2px 10px rgba(24,197,155,0.14);
 }
 
-/* --- END CARD HIGHLIGHT STYLE --- */
+/* --- ACHIEVEMENTS GRID (NO WHITE BLOCK UNDER TITLE) --- */
+.achievements-section {
+  background: transparent;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  margin-top: 0;
+}
+.achievements-title {
+  margin: 0.2rem 0 0.15rem 0;
+}
+.achievements-grid {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: space-between;
+}
+.achievements-grid > .card {
+  /* 3 across with vw-friendly sizing */
+  flex: 0 0 calc(33.333% - 0.5rem);
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .achievements-grid > .card {
+    flex: 0 0 calc(50% - 0.35rem);
+  }
+}
+@media (max-width: 600px) {
+  .achievements-grid {
+    gap: 0.5rem;
+  }
+  .achievements-grid > .card {
+    flex: 0 0 100%;
+  }
+}
+
+/* --- END ACHIEVEMENTS GRID --- */
 /* --- SECTION FLEX BORDER BOTTOM --- */
 .section-flex {
   border-bottom: 4px solid #007BFF;
@@ -307,6 +343,7 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
 .section-flex.vision {
   border-bottom: 4px solid #28a745;
 }
+
 @media (max-width: 900px) {
   .section-flex, .section-flex.vision {
     border-bottom-width: 3px;
