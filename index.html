@@ -141,8 +141,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="container">
-            <img src="favicon.ico" alt="Logo" class="logo">
+            <div class="container">
+            <div class="brand">
+                <img src="favicon.ico" alt="Logo" class="logo">
+                <span class="brand-text">dominic portifolio</span>
+            </div>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -165,12 +168,12 @@
         <section id="about" class="section">
             <div class="section-flex" style="border-bottom:4px solid #007BFF;">
                 <div class="section-content">
-                    <h1 style="color: #f7b828;">*Dominic Mutuku Mutua*</h1>
-                    <p> *Delegate Candidate — Mwalimu National DT SACCO 2027* </p>
+                    <h1 style="color: #f7b828;">Dominic Mutuku Mutua</h1>
+                    <p>Delegate Candidate — Mwalimu National DT SACCO 2027</p>
                     <p>Tech-driven educationist committed to financial empowerment, transparency, and member-first SACCO governance.</p>
-                    <p> *Digital Transformation | Member Representation | Transparency* </p>
+                    <p>Digital Transformation | Member Representation | Transparency</p>
                     <hr style="border:1px solid #007BFF;width:60%;margin:1rem auto;">
-                    <h2> *About* </h2>
+                    <h2>About</h2>
                     <p>Dominic Mutuku Mutua is a dedicated educationist, researcher, and digital service provider born in Machakos and raised in Kalawa Ward, Mbooni East Sub-county, Makueni County. Currently based in Nairobi and serving under the Teachers Service Commission (TSC), he brings a strong blend of academic excellence and practical experience.
 
 Dominic holds a Master of Science in ICT Integration in Education and Instructional Design from JKUAT and a Master of Education in Advanced Teaching from the University of the People (USA). With a solid foundation in Mathematics, Physics, and technology, he is deeply committed to delivering practical, member-centered solutions in every institution he serves.</p>
@@ -182,7 +185,7 @@ Dominic holds a Master of Science in ICT Integration in Education and Instructio
         <section id="biography" class="section">
             <div class="section-flex" style="border-bottom:4px solid #f7b828;">
                 <div class="section-content">
-                    <h2> *Professional Profile* </h2>
+                    <h2>Professional Profile</h2>
                     <p>Current Employer: Teachers Service Commission (TSC)
 *Highest Qualification:* MSc. ICT Integration in Education — JKUAT (2025)
 Second Master’s Degree: M.Ed. Advanced Teaching — University of the People, USA (2023)
@@ -375,7 +378,7 @@ Champion clear, timely communication of SACCO decisions, financial performance, 
                 <div class="section-content">
                     <h2>Vision</h2>
                     <hr style="border:1px solid #28a745;width:40%;margin:0.5rem auto;">
-                    <p>*Dominic Mutuku Mutua* is a dedicated educationist committed to financial empowerment, transparency, and member-first SACCO governance—bringing a practical, tech-driven approach to Mwalimu National DT SACCO (2027).</p>
+                    <p>Dominic Mutuku Mutua is a dedicated educationist committed to financial empowerment, transparency, and member-first SACCO governance—bringing a practical, tech-driven approach to Mwalimu National DT SACCO (2027).</p>
                 </div>
                 <img src="vision.jpg" alt="Vision" class="section-img-large">
             </div>
@@ -468,7 +471,7 @@ Champion clear, timely communication of SACCO decisions, financial performance, 
         </section>
         <section id="final-call" class="section">
             <h2>Final Call</h2>
-            <p>*Dominic Mutuku Mutua* — Mwalimu National DT SACCO 2027. Elect the delegate who will champion member-first governance, digital transformation, financial empowerment, and full transparency & accountability.</p>
+            <p>Dominic Mutuku Mutua — Mwalimu National DT SACCO 2027. Elect the delegate who will champion member-first governance, digital transformation, financial empowerment, and full transparency & accountability.</p>
         </section>
     </main>
     <footer class="section" id="contact">
@@ -493,7 +496,13 @@ Champion clear, timely communication of SACCO decisions, financial performance, 
     <script>
         function toggleMenu() {
             const menu = document.getElementById('nav-menu');
+            const isOpen = menu.classList.contains('active');
             menu.classList.toggle('active');
+            if (!isOpen) {
+              menu.classList.add('nav-open');
+            } else {
+              menu.classList.remove('nav-open');
+            }
         }
 
         // Smooth scroll for internal links
