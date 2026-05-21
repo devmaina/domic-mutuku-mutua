@@ -135,13 +135,62 @@ footer.section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 .navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  justify-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0.3rem 1rem;
 }
+
+/* Far left: hamburger */
+.navbar .hamburger {
+  grid-column: 1;
+  justify-self: start;
+  margin-left: 0;
+}
+
+/* Center top title text (PORTIFOLIO) */
+.navbar .brand-text {
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+/* Center top: Portifolio text is centered */
+.navbar .brand {
+  grid-column: 3;
+  justify-self: end;
+  align-self: start;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+/* Center title */
+.navbar .brand-text {
+  color: #18c59b;
+  font-weight: 900;
+  text-transform: none;
+  text-align: center;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+/* Mobile: keep the title centered */
+@media (max-width: 600px) {
+  .navbar .brand {
+    grid-column: auto;
+    justify-self: center;
+    margin-right: 0;
+  }
+}
+
+.navbar .brand-text {
+  color: #18c59b;
+  font-weight: 900;
+  text-transform: none;
+}
+
 .navbar .logo {
   font-weight: 900;
   color: #fff;
@@ -149,6 +198,18 @@ footer.section {
   margin: 1.3vw 0;
   letter-spacing: 1px;
 }
+
+/* Ensure logo stays at far right with some right margin */
+.navbar .logo {
+  margin-right: 0.6rem;
+}
+
+/* Keep brand content aligned inside the right column */
+.navbar .brand { 
+  grid-column: 3;
+  justify-self: end;
+}
+
 .navbar .brand {
   display: flex;
   align-items: center;
