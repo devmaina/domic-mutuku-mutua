@@ -28,7 +28,8 @@ html { scroll-behavior: smooth; }
 }
 * { scroll-behavior: smooth; }
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Inter Tight', 'Inter', Arial, sans-serif;
+  font-weight: 700;
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -90,6 +91,7 @@ body {
 }
 .btn {
   background: var(--primary);
+  font-family: inherit;
   color: #ffffff;
   padding: 0.45em 1.1em;
   border-radius: 10px;
@@ -233,11 +235,13 @@ footer.section {
 }
 .navbar ul li {
   background-color: #0a7a4f;
+  font-family: inherit;
   border-radius: 5px;
   padding: 0.5rem 0.7rem;
 }
 .navbar a {
   text-decoration: none;
+  font-family: inherit;
   color: #fff;
   font-weight: 500;
   font-size: 0.97rem;
@@ -375,6 +379,12 @@ body, .container, .section, .section-header, .card-grid, .card, .footer, .copyri
   flex: 1;
   text-align: left;
 }
+
+/* Make regular paragraph text lighter */
+.section p {
+  font-weight: 450;
+}
+
 @media (max-width: 900px) {
   .section-flex {
     width: 90vw;

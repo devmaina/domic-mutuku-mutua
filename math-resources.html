@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Resources | JSS & Senior Secondary (Kenya Curriculum)</title>
+  <meta name="description" content="Math resources for Kenya: Grade 6 to Grade 10 (JSS and Senior Secondary). Teacher-posted notes, practice topics, and revision checklists." />
+
+  <!-- Uniform bold sans-serif font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.section');
+      const revealOnScroll = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      sections.forEach(section => {
+        section.classList.add('reveal');
+        revealOnScroll.observe(section);
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">
+        <img src="favicon.ico" alt="Logo" class="logo">
+        <span class="brand-text"> </span>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="nav-menu">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="math-resources.html">Math Resources</a></li>
+        <li><a href="physics-resources.html">Physics Resources</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container" style="margin-top: 5.5rem;">
+    <header class="section" style="margin-bottom: 0.2rem;">
+      <div class="section-flex vision" style="border-bottom:4px solid var(--icegreen-700);">
+        <div class="section-content">
+          <h1 style="color: var(--icegreen-700); margin-bottom: 0.3rem;">Math Resource Hub</h1>
+          <p style="margin-top: 0.2rem;">Teacher-posted notes, JSS & Senior Secondary revision topics, practice prompts, and formula/skill checklists (Grade 6–10).</p>
+          <p><strong>How to use:</strong> Choose your grade band, attempt the practice prompts, then review the key skills and common exam mistakes.</p>
+        </div>
+        <img src="teaching.jpg" alt="Teaching" class="section-img-large">
+      </div>
+    </header>
+
+    <!-- ===================== JSS (Grade 6–7) ===================== -->
+    <section id="jss1-2" class="section">
+      <h2 style="color: var(--icegreen-700);">JSS Level (Grade 6–7): Number Sense, Algebra Starter & Geometry Skills</h2>
+      <p style="margin-top: -0.2rem;">These foundations help learners build confidence with operations, patterns, measurements, and basic geometry.</p>
+
+      <div class="section-flex" style="margin-top: 0.5rem;">
+        <div class="section-content">
+          <h3>1) Integers, Decimals & Fractions (Core)</h3>
+          <ul>
+            <li><strong>Integers:</strong> ordering, addition/subtraction, multiplication/division, negative interpretation.</li>
+            <li><strong>Fractions:</strong> simplifying, equivalent fractions, adding/subtracting with common denominators.</li>
+            <li><strong>Decimals:</strong> place value, rounding, conversions between fractions and decimals.</li>
+            <li><strong>Percentages:</strong> % as part-of-100; simple percentage problems.</li>
+            <li><strong>Word problems:</strong> translate statements into operations.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Compute using correct order of operations (BODMAS).</li>
+            <li>Convert between fractions and decimals and then compare/ order them.</li>
+            <li>Solve percentage of a quantity: discounts, marks, and simple growth.</li>
+          </ul>
+          <p><strong>Suggested drill:</strong> Create a 10-minute daily set of fraction/decimal conversions and simplified results.</p>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>2) Ratio, Rate & Proportion (JSS Core Tools)</h3>
+          <ul>
+            <li><strong>Ratio:</strong> simplifying ratios; sharing quantities in a ratio.</li>
+            <li><strong>Rate:</strong> km/h, m/s; interpreting real-life rate meaning.</li>
+            <li><strong>Proportion:</strong> direct proportion problems (as required progressively).</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Split quantities (money, water, food) in ratios.</li>
+            <li>Convert units before calculating rate (avoid common mistakes).</li>
+            <li>Solve direct proportion problems with clear steps.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>3) Algebra Starter: Expressions, Equations & Patterns</h3>
+          <ul>
+            <li><strong>Algebraic expressions:</strong> like terms; simplifying.</li>
+            <li><strong>Substitution:</strong> evaluate expressions for given values.</li>
+            <li><strong>Equations (intro):</strong> solve simple linear equations (as required).</li>
+            <li><strong>Patterns:</strong> number patterns; rules from patterns.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Substitute and simplify carefully (show working).</li>
+            <li>Solve one-step and two-step equations using inverse operations.</li>
+            <li>Find the next terms and the rule of patterns.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>4) Geometry & Mensuration: Lines, Angles & 2D Shapes</h3>
+          <ul>
+            <li><strong>Angles:</strong> properties of triangles; parallel line angle rules (core understanding).</li>
+            <li><strong>Circles (intro):</strong> radius/diameter, simple circle properties.</li>
+            <li><strong>Triangles:</strong> types by sides/angles; area of triangles (core).</li>
+            <li><strong>Quadrilaterals:</strong> properties; area/perimeter basics.</li>
+            <li><strong>Mensuration:</strong> rectangles/squares; area/perimeter practice.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Draw diagrams neatly and label angles clearly.</li>
+            <li>Solve area/perimeter problems with unit conversions where needed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JSS (Grade 8–9) ===================== -->
+    <section id="jss3" class="section">
+      <h2 style="color: var(--icegreen-700);">JSS Level (Grade 8–9): Algebra Expansion, Trigonometry Intro & Advanced Mensuration</h2>
+      <p style="margin-top: -0.2rem;">Move from arithmetic into deeper algebraic manipulation and stronger geometry skills.</p>
+
+      <div class="section-flex" style="margin-top: 0.5rem;">
+        <div class="section-content">
+          <h3>1) Algebra: Expanding, Factorizing (Core Skills)</h3>
+          <ul>
+            <li><strong>Algebraic expansion:</strong> distributive property.</li>
+            <li><strong>Factorization:</strong> take out common factors; simple identities where applicable.</li>
+            <li><strong>Equations:</strong> solve linear equations and simultaneous equations (as required).</li>
+            <li><strong>Indices (exponents):</strong> laws of indices (progressively introduced).</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Expand and simplify expressions with correct sign handling.</li>
+            <li>Factorize to solve equations more quickly.</li>
+            <li>Check answers by substitution.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>2) Number & Indices/Logs Foundations (As per Kenya progression)</h3>
+          <ul>
+            <li><strong>Number systems:</strong> rational/irrational, surds (as introduced).</li>
+            <li><strong>Indices/Surds simplification:</strong> turning problems into standard forms.</li>
+            <li><strong>Standard forms:</strong> prepare for exam-style transformations.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Simplify surds and indices using rules.</li>
+            <li>Express answers in simplest form.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>3) Geometry: 2D & 3D Shapes + Advanced Mensuration</h3>
+          <ul>
+            <li><strong>3D shapes:</strong> prisms, cylinders, cones, pyramids (surface area/volume where introduced).</li>
+            <li><strong>Circles:</strong> circumference, area of circle (as required).</li>
+            <li><strong>Coordinate geometry (intro):</strong> plotting points, distance between points (as required).</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Solve volume/surface area problems and show formula substitution.</li>
+            <li>Use correct units (cm³ vs cm²).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>4) Statistics & Probability (Core Exam Area)</h3>
+          <ul>
+            <li><strong>Data handling:</strong> mean, median, mode (as required).</li>
+            <li><strong>Graphs:</strong> bar graphs, line graphs, pie charts.</li>
+            <li><strong>Probability:</strong> sample space; theoretical probability for equally likely outcomes.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Draw graphs from a given table.</li>
+            <li>Interpret data trends and answer question statements.</li>
+            <li>Compute probabilities and simplify fractions/decimals.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>5) Trigonometry Intro (Where applicable)</h3>
+          <ul>
+            <li><strong>Right triangles:</strong> opposite/adjacent/hypotenuse identification.</li>
+            <li><strong>Angles:</strong> sine/cosine/tangent definitions (as introduced).</li>
+            <li><strong>Basic trigonometric calculations:</strong> find missing sides/angles using ratios.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Identify sides correctly before substituting values.</li>
+            <li>Use calculator angles carefully (degrees vs radians).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Senior Secondary Entry (Grade 10 / Form 4) ===================== -->
+    <section id="grade10" class="section">
+      <h2 style="color: var(--icegreen-700);">Senior Secondary Entry (Grade 10 / Form 4): Exam-Ready Math Skills</h2>
+      <p style="margin-top: -0.2rem;">A high-yield revision checklist aligned to common Grade 10 expectations: algebra, geometry, trigonometry, statistics and word problems.</p>
+
+      <div class="section-flex" style="margin-top: 0.5rem;">
+        <div class="section-content">
+          <h3>1) Algebra: Functions, Transformations (as required) & Equations</h3>
+          <ul>
+            <li><strong>Indices/Surds:</strong> simplification and standard form.</li>
+            <li><strong>Quadratic foundations:</strong> solving and interpreting solutions (where introduced).</li>
+            <li><strong>Functions:</strong> domain/range, interpreting graphs (as required).</li>
+            <li><strong>Simultaneous equations:</strong> elimination/substitution methods.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Solve exam-style equations with clear steps.</li>
+            <li>Check solutions and interpret them in the question context.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>2) Geometry & Trigonometry (High-Yield)</h3>
+          <ul>
+            <li><strong>Coordinate geometry:</strong> straight line equations, gradient, intercepts (as required).</li>
+            <li><strong>Trigonometry:</strong> solving right triangles and basic trig equations (as introduced).</li>
+            <li><strong>Mensuration:</strong> composite shapes with volume/surface area methods.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Draw accurate diagrams and label given/required values.</li>
+            <li>Use correct trig ratio and sign conventions.</li>
+            <li>Solve composite shape problems with unit consistency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>3) Statistics, Probability & Data Interpretation</h3>
+          <ul>
+            <li><strong>Measures of central tendency:</strong> mean/median/mode (as required).</li>
+            <li><strong>Dispersion:</strong> range/interquartile basics (as required).</li>
+            <li><strong>Probability:</strong> compound events (as required).</li>
+            <li><strong>Interpreting questions:</strong> convert statements to calculations.</li>
+          </ul>
+          <p><strong>Practice prompts:</strong></p>
+          <ul>
+            <li>Compute probability for real scenario questions.</li>
+            <li>Summarize data in words and support with calculations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top: 1rem;">
+        <div class="section-content">
+          <h3>4) Exam Strategy: Working, Neatness & Common Mistakes</h3>
+          <ul>
+            <li>Write known values and required values before solving.</li>
+            <li>Show working for algebraic simplification and substitutions.</li>
+            <li>Use units consistently for mensuration and measurement tasks.</li>
+            <li>Double-check calculator results, especially trig and surds.</li>
+          </ul>
+          <p><strong>Suggested drill:</strong> Do a timed mixed paper set twice weekly and correct every error.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="teacher-updates" class="section">
+      <div class="section-flex" style="border-bottom:4px solid #007BFF;">
+        <div class="section-content">
+          <h2 style="color:#007BFF;">Teacher Updates (Add Your Posts)</h2>
+          <p><strong>Publish here:</strong></p>
+          <ul>
+            <li>Weekly revision notes</li>
+            <li>Model questions and solutions</li>
+            <li>Short quizzes and marking schemes</li>
+            <li>Video links and practice worksheets</li>
+          </ul>
+          <p style="opacity:0.9;">For now, the JSS and Grade 10 checklists above are the main learning content.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section" id="contact">
+    <h2>Contact & Socials</h2>
+    <div class="card-grid">
+      <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/phone.png" alt="Phone"><p>+254 715 077762</p></div>
+      <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/email.png" alt="Email"><p>dominicmutua96@mwalimu.tsc.go.ke</p></div>
+      <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/marker.png" alt="Location"><p>Nairobi CBD</p></div>
+    </div>
+
+    <div class="socials">
+      <a href="https://twitter.com/MutuaMDominic" aria-label="Twitter"><img src="https://img.icons8.com/ios-filled/40/007BFF/twitterx.png" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/dominic-mutua-b8257ab4" aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/40/007BFF/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://facebook.com/MutukuDMutua" aria-label="Facebook"><img src="https://img.icons8.com/ios-filled/40/007BFF/facebook-new.png" alt="Facebook"></a>
+      <a href="https://instagram.com/dmutuku_mutua" aria-label="Instagram"><img src="https://img.icons8.com/ios-filled/40/007BFF/instagram-new--v1.png" alt="Instagram"></a>
+      <a href="https://threads.net/@dmutuku_mutua" aria-label="Threads"><img src="https://img.icons8.com/ios-filled/40/007BFF/threads.png" alt="Threads"></a>
+      <a href="https://tiktok.com/@dmutuku_mutua" aria-label="TikTok"><img src="https://img.icons8.com/ios-filled/40/007BFF/tiktok.png" alt="TikTok"></a>
+    </div>
+
+    <img src="favicon.ico" alt="Logo" style="width: 50px; height: auto; margin: 1rem 0;">
+    <p class="copyright">&copy; 2025 Mutua Dominic Mutuku. All rights reserved.</p>
+    <p class="site-credit">Site designed and supported by <a href="https://ibconcept.vip" target="_blank" rel="noopener"><b>ibconcept</b></a></p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const isOpen = menu.classList.contains('active');
+      menu.classList.toggle('active');
+      if (!isOpen) menu.classList.add('nav-open');
+      else menu.classList.remove('nav-open');
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu.classList.contains('active')) menu.classList.remove('active');
+      menu.classList.remove('nav-open');
+    }
+
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('nav-menu');
+      const hamburger = document.querySelector('.hamburger');
+      if (!menu || !hamburger) return;
+
+      const clickedInsideMenu = menu.contains(e.target);
+      const clickedHamburger = hamburger.contains(e.target);
+      if (menu.classList.contains('active') && !clickedInsideMenu && !clickedHamburger) {
+        closeMenu();
+      }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        const menu = document.getElementById('nav-menu');
+        if (menu.classList.contains('active')) menu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
