@@ -153,14 +153,41 @@
                 <span></span>
             </div>
             <ul id="nav-menu">
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#manifesto">Manifesto</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#memberships">Memberships</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    Professional <span class="dropdown-caret" aria-hidden="true">▾</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-label="Professional">
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#memberships">Memberships</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    Personal <span class="dropdown-caret" aria-hidden="true">▾</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-label="Personal">
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#manifesto">Manifesto</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    Students Resources <span class="dropdown-caret" aria-hidden="true">▾</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-label="Students Resources">
+                    <li><a href="math-resources.html">CBE-MATH-resources</a></li>
+                    <li><a href="physics-resources.html">CBE-PHYSICS-resources</a></li>
+                  </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -249,7 +276,6 @@ ICMRP International Conference
                 <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/classroom.png" alt="Kaketi"><h3>Kaketi Mixed Day Secondary School</h3><p>Head of Science (2015–2018)</p></div>
             </div>
         </section>
-        <section id="publications" class="section"></section>
         <section id="memberships" class="section"></section>
         <section id="project-smartskool" class="section"></section>
         <section id="hobbies" class="section"></section>
@@ -379,8 +405,11 @@ style="border-bottom: 4px solid linear-gradient(90deg, #007BFF, #18c59b);"
             </div>
         </section>
         <section id="publications" class="section">
-            <h2>Publications</h2>
-            <div class="card-grid">
+            <div class="section-flex" style="border-bottom:4px solid #18c59b;">
+                <div class="section-content">
+                    <h2 style="margin:0;">Publications</h2>
+                    <hr style="border:1px solid #18c59b;width:40%;margin:0.5rem auto;">
+                    <div class="card-grid">
                 <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>YouTube-based Virtual Lab Learning</h3><p><a href="https://doi.org/10.36227/techrxiv.173750141.17407413/v1" target="_blank">Read</a></p></div>
                 <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>Math Memes in Kenya Education</h3><p><a href="https://doi.org/10.1109/te.2023.3346990" target="_blank">Read</a></p></div>
                 <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>Multimedia Math Memes in Classrooms</h3><p><a href="https://doi.org/10.15379/ijmst.v10i1.2691" target="_blank">Read</a></p></div>
@@ -458,6 +487,25 @@ style="border-bottom: 4px solid linear-gradient(90deg, #007BFF, #18c59b);"
             menu.classList.remove('nav-open');
         }
 
+        function initDropdowns() {
+            document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+
+                    const dropdown = this.closest('.dropdown');
+                    if (!dropdown) return;
+
+                    const isOpen = dropdown.classList.contains('open');
+                    document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
+                    dropdown.classList.toggle('open', !isOpen);
+
+                    // Keep aria-expanded in sync
+                    document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(t => t.setAttribute('aria-expanded', 'false'));
+                    btn.setAttribute('aria-expanded', String(!isOpen));
+                });
+            });
+        }
+
         // Close menu when clicking outside
         document.addEventListener('click', function (e) {
             const menu = document.getElementById('nav-menu');
@@ -470,7 +518,15 @@ style="border-bottom: 4px solid linear-gradient(90deg, #007BFF, #18c59b);"
             if (menu.classList.contains('active') && !clickedInsideMenu && !clickedHamburger) {
                 closeMenu();
             }
+
+            // Close any open dropdowns when clicking outside
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
+                document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(t => t.setAttribute('aria-expanded', 'false'));
+            }
         });
+
+        initDropdowns();
 
         // Smooth scroll for internal links
 
