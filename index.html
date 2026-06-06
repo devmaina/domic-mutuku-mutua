@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutua Dominic Mutuku - Candidate for Nairobi Branch Organizing Secretary, KUPPET Vied</title>
+    <title>Mutua Dominic Mutuku - Campaign Profile</title>
 
-    <meta name="description"
-    <meta name="keywords" content="Mutua Dominic Mutuku, KUPPET, Nairobi Branch Organizing Secretary, education reform, teacher welfare, digital innovation, manifesto, campaign, biography, publications, achievements, memberships, hobbies">
+    <meta name="description" content="Official campaign profile of Mutua Dominic Mutuku. Explore his vision, manifesto, education, and digital educational innovations.">
+    <meta name="keywords" content="Mutua Dominic Mutuku, KUPPET, Nairobi, education reform, teacher welfare, digital innovation, manifesto, campaign, biography, publications, achievements, memberships, hobbies">
     <meta name="author" content="Mutua Dominic Mutuku">
     <meta name="geo.placename" content="Nairobi CBD">
     <meta name="geo.position" content="-1.286389;36.817222">
     <meta name="geo.region" content="KE-030">
     <meta name="DC.title" content="Mutua Dominic Mutuku - Campaign Profile">
     <link rel="canonical" href="https://yourwebsite.com/mutua-dominic-mutuku" />
+
+    <!-- Schema Structured Markup -->
     <script type="application/ld+json">
     [
       {
@@ -58,509 +60,1224 @@
           }
         ],
         "knowsAbout": ["Education", "ICT Integration in Education", "Instructional Design", "Mathematics", "Physics", "Digital Literacy", "AI in Education"]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "KUPPET Vied Date",
-        "startDate": "2026-01-31T00:00:00",
-        "endDate": "2026-01-31T23:59:59",
-        "location": {
-          "@type": "Place",
-          "name": "Kenya Institute Of Curriculum Development (KICD)",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Nairobi",
-            "addressCountry": "Kenya"
-          }
-        },
-        "description": "KUPPET Vied voting/selection session. Venue: Kenya Institute Of Curriculum Development (KICD).",
-        "organizer": {
-          "@type": "Organization",
-          "name": "KUPPET"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Mutua Dominic Mutuku - Campaign Profile",
-        "url": "https://yourwebsite.com/mutua-dominic-mutuku",
-        "description": "Official campaign profile of Mutua Dominic Mutuku, candidate for Nairobi Branch Organizing Secretary - KUPPET. Explore his vision, manifesto, education, experience, publications, achievements, memberships, and hobbies.",
-        "author": {
-          "@type": "Person",
-          "name": "Mutua Dominic Mutuku"
-        },
-        "publisher": {
-          "@type": "Person",
-          "name": "Mutua Dominic Mutuku"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "SmartSkool.click",
-        "description": "Innovative educational app for modern learning.",
-        "url": "https://ibconcept.github.io/smartskool/",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Web",
-        "author": {
-          "@type": "Person",
-          "name": "Mutua Dominic Mutuku"
-        }
       }
     ]
     </script>
+
+    <!-- Tailwind CSS Integration -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Plus Jakarta Sans - Soft, compact and beautifully rounded -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS variables supporting fully responsive light/dark design models -->
+    <style>
+        :root {
+            /* Light theme specifications (LHS: Soft clean Ice green base) */
+            --bg-primary: #f4fdfa;       /* Ultra soft mint background */
+            --bg-secondary: #e3faf2;     /* Soft frosted emerald tint */
+            --bg-surface: #ffffff;       /* Pure white containers */
+            --text-main: #021a17;        /* Elite deep dark forest green */
+            --text-muted: #0b4a43;       /* Safe forest shadow */
+            --accent-core: #14b8a6;      /* Active teal-green action */
+            --accent-hover: #0f9f90;     /* Deeper emerald teal action */
+            --border-soft: #c1f4e3;      /* Frosted mint separator line */
+            --card-shadow: 0 4px 20px rgba(15, 159, 144, 0.04);
+            
+            --ice-50: #f4fdfa;
+            --ice-100: #e3faf2;
+            --ice-200: #c1f4e3;
+            --ice-300: #93ebd0;
+            --ice-400: #4bd8ad;
+            --ice-500: #14b8a6;
+            --ice-600: #0f9f90;
+            --dark-700: #0a5c53;
+            --dark-800: #0b4a43;
+            --dark-900: #05332e;
+            --dark-950: #021a17;
+        }
+
+        .dark-mode {
+            /* Dark theme specifications */
+            --bg-primary: #021a17;       /* Deepest midnight forest green background */
+            --bg-secondary: #05332e;     /* Prestigious dark pine */
+            --bg-surface: #0b4a43;       /* Safe forest shadow container */
+            --text-main: #f4fdfa;        /* Ultra soft mint readable text */
+            --text-muted: #c1f4e3;       /* Frosted mint metadata text */
+            --accent-core: #4bd8ad;      /* Vibrant ice-green highlight */
+            --accent-hover: #93ebd0;     /* Lighter mint actions hover */
+            --border-soft: #0a5c53;      /* Deep forest green frame */
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            letter-spacing: -0.015em;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Seamless scrolling animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(8px);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom soft compact scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-core);
+            border-radius: 99px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Eliminate harsh browser outlines entirely */
+        *:focus, button:focus, a:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Transitions for theme toggle styling */
+        .theme-transition {
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('.section');
-        const revealOptions = {
-          threshold: 0.08
-        };
-        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(entry => {
-            if(entry.isIntersecting){
-              entry.target.classList.add('reveal-visible');
-              observer.unobserve(entry.target);
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+            colors: {
+              ice: {
+                50: 'var(--ice-50)',
+                100: 'var(--ice-100)',
+                200: 'var(--ice-200)',
+                300: 'var(--ice-300)',
+                400: 'var(--ice-400)',
+                500: 'var(--ice-500)',
+                600: 'var(--ice-600)',
+                700: 'var(--dark-700)',
+                800: 'var(--dark-800)',
+                900: 'var(--dark-900)',
+                950: 'var(--dark-950)'
+              }
             }
-          });
-        }, revealOptions);
-        sections.forEach(section => {
-          section.classList.add('reveal');
-          revealOnScroll.observe(section);
-        });
-      });
+          }
+        }
+      }
     </script>
 </head>
-<body>
-    <nav class="navbar">
-            <div class="container">
-            <div class="brand">
-                <img src="favicon.ico" alt="Logo" class="logo">
-<span class="brand-text"></span>
+<body class="selection:bg-ice-500 selection:text-white relative antialiased theme-transition">
+
+    <!-- Navigation Header Area -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-ice-950/90 backdrop-blur-md border-b border-[var(--border-soft)] transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <!-- Brand logo area -->
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="flex items-center space-x-2 group">
+                        <img src="favicon.ico" alt="Logo" class="w-7 h-7 object-contain rounded-lg transition-transform duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/40x40/021a17/a3f3df?text=DM'">
+                        <div class="flex flex-col">
+                            <span class="text-[var(--text-main)] font-extrabold text-[11px] leading-tight tracking-tight uppercase">MUTUA DOMINIC</span>
+                            <span class="text-[8px] text-[var(--accent-hover)] font-semibold uppercase tracking-wider">Educationist &amp; Researcher</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop navigation menu and controls -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-[var(--accent-hover)] hover:bg-[var(--bg-secondary)] transition-all uppercase tracking-wide">Home</a>
+
+                    <!-- Professional Dropdown -->
+                    <div class="relative group">
+                        <button class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-secondary)] inline-flex items-center gap-0.5 transition-all uppercase tracking-wide">
+                            Professional <span class="material-icons text-[10px]">expand_more</span>
+                        </button>
+                        <ul class="absolute top-full left-0 mt-0.5 w-40 bg-[var(--bg-surface)] rounded-lg shadow-lg p-1 hidden group-hover:block transition-all duration-200 border border-[var(--border-soft)]">
+                            <li><a href="#biography" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Biography</a></li>
+                            <li><a href="#experience" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Experience</a></li>
+                            <li><a href="#education" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Education</a></li>
+                            <li><a href="#publications" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Publications</a></li>
+                            <li><a href="#memberships" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Memberships</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Campaign Dropdown -->
+                    <div class="relative group">
+                        <button class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-secondary)] inline-flex items-center gap-0.5 transition-all uppercase tracking-wide">
+                            Campaign &amp; Vision <span class="material-icons text-[10px]">expand_more</span>
+                        </button>
+                        <ul class="absolute top-full left-0 mt-0.5 w-40 bg-[var(--bg-surface)] rounded-lg shadow-lg p-1 hidden group-hover:block transition-all duration-200 border border-[var(--border-soft)]">
+                            <li><a href="#pillars-section" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Pillars</a></li>
+                            <li><a href="#manifesto" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Manifesto</a></li>
+                            <li><a href="#contact" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources Dropdown (Math 1 & 2, Physics) -->
+                    <div class="relative group">
+                        <button class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-secondary)] inline-flex items-center gap-0.5 transition-all uppercase tracking-wide">
+                            Resources <span class="material-icons text-[10px]">expand_more</span>
+                        </button>
+                        <ul class="absolute top-full right-0 mt-0.5 w-48 bg-[var(--bg-surface)] rounded-lg shadow-lg p-1 hidden group-hover:block transition-all duration-200 border border-[var(--border-soft)]">
+                            <li><a href="math-resources.html" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Math 1 (CBE Resources)</a></li>
+                            <li><a href="math-resources-2.html" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Math 2 (Additional Content)</a></li>
+                            <li><a href="physics-resources.html" class="block px-2.5 py-1.5 text-[10px] font-semibold text-[var(--text-main)] hover:text-[var(--accent-core)] hover:bg-[var(--bg-primary)] rounded transition-all">Physics (CBE Resources)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Light / Dark Mode Toggle Button (Desktop) -->
+                    <button onclick="toggleDarkMode()" class="p-1 rounded-lg text-[var(--text-main)] hover:bg-[var(--bg-secondary)] transition-all ml-2" aria-label="Toggle theme">
+                        <span id="theme-icon" class="material-icons text-base">dark_mode</span>
+                    </button>
+                </div>
+
+                <!-- Controls & Hamburger for mobile -->
+                <div class="lg:hidden flex items-center space-x-2">
+                    <button onclick="toggleDarkMode()" class="p-1 rounded-lg text-[var(--text-main)] hover:bg-[var(--bg-secondary)] transition-all" aria-label="Toggle theme">
+                        <span id="theme-icon-mobile" class="material-icons text-base">dark_mode</span>
+                    </button>
+                    <button onclick="toggleMenu()" class="text-[var(--text-main)] hover:text-[var(--accent-core)] p-1 rounded-md hover:bg-[var(--bg-secondary)]" aria-label="Open menu">
+                        <span class="material-icons text-xl">menu</span>
+                    </button>
+                </div>
             </div>
-            <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
+        </div>
+
+        <!-- Mobile navigation menu panel -->
+        <div id="nav-menu" class="hidden lg:hidden bg-[var(--bg-surface)] border-b border-[var(--border-soft)] transition-all duration-300">
+            <div class="px-4 pt-1.5 pb-4 space-y-2">
+                <a href="index.html" class="block px-2.5 py-1.5 rounded-lg text-[10px] font-bold text-[var(--accent-hover)] bg-[var(--bg-primary)]">Home</a>
                 
-                <span></span>
-                <span></span>
-                <span></span>
+                <div>
+                    <div class="px-2.5 py-0.5 text-[8px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Professional</div>
+                    <div class="pl-2 mt-0.5 space-y-0.5">
+                        <a href="#biography" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Biography</a>
+                        <a href="#experience" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Experience</a>
+                        <a href="#education" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Education</a>
+                        <a href="#publications" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Publications</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="px-2.5 py-0.5 text-[8px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Campaign &amp; Vision</div>
+                    <div class="pl-2 mt-0.5 space-y-0.5">
+                        <a href="#pillars-section" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Pillars</a>
+                        <a href="#manifesto" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Manifesto</a>
+                        <a href="#contact" onclick="closeMenu()" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="px-2.5 py-0.5 text-[8px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Student Resources</div>
+                    <div class="pl-2 mt-0.5 space-y-0.5">
+                        <a href="math-resources.html" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Math 1</a>
+                        <a href="math-resources-2.html" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Math 2</a>
+                        <a href="physics-resources.html" class="block px-2.5 py-1 text-[10px] font-medium text-[var(--text-main)] hover:bg-[var(--bg-primary)] rounded">Physics Resources</a>
+                    </div>
+                </div>
             </div>
-            <ul id="nav-menu">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-
-                <li class="nav-item dropdown">
-                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-                    Professional <span class="dropdown-caret" aria-hidden="true">▾</span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" aria-label="Professional">
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#memberships">Memberships</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-                    Personal <span class="dropdown-caret" aria-hidden="true">▾</span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" aria-label="Personal">
-                    <li><a href="#vision">Vision</a></li>
-                    <li><a href="#manifesto">Manifesto</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-                    Students Resources <span class="dropdown-caret" aria-hidden="true">▾</span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" aria-label="Students Resources">
-                    <li><a href="math-resources.html">CBE-MATH-resources</a></li>
-                    <li><a href="physics-resources.html">CBE-PHYSICS-resources</a></li>
-                  </ul>
-                </li>
-            </ul>
         </div>
     </nav>
-    <main class="container">
 
-        <section id="about" class="section">
-            <div class="section-flex" style="border-bottom:4px solid #007BFF;">
-                <div class="section-content">
-                    <h1 style="color: #f7b828;">Dominic Mutuku Mutua</h1>
-                    <p>Delegate Candidate — Mwalimu National DT SACCO 2027</p>
-                    <p>Tech-driven educationist committed to financial empowerment, transparency, and member-first SACCO governance.</p>
-                    <p>Digital Transformation | Member Representation | Transparency</p>
-                    <hr style="border:1px solid #007BFF;width:60%;margin:1rem auto;">
-                    <h2>About</h2>
-                    <p>Dominic Mutuku Mutua is a dedicated educationist, researcher, and digital service provider born in Machakos and raised in Kalawa Ward, Mbooni East Sub-county, Makueni County. Currently based in Nairobi and serving under the Teachers Service Commission (TSC), he brings a strong blend of academic excellence and practical experience.
-
-Dominic holds a Master of Science in ICT Integration in Education and Instructional Design from JKUAT and a Master of Education in Advanced Teaching from the University of the People (USA). With a solid foundation in Mathematics, Physics, and technology, he is deeply committed to delivering practical, member-centered solutions in every institution he serves.</p>
-                </div>
-                <img src="mutua.png" alt="Dominic Mutuku Mutua" class="section-img-large">
-            </div>
-        </section>
-
-        <section id="biography" class="section">
-            <div class="section-flex" style="border-bottom:4px solid #f7b828;">
-
-                <div class="section-content">
-                    <h2>Professional Profile</h2>
-                    <p>Current Employer: Teachers Service Commission (TSC)
-Highest Qualification: MSc. ICT Integration in Education — JKUAT (2025)
-Second Master’s Degree: M.Ed. Advanced Teaching — University of the People, USA (2023)
-First Degree: B.Ed. Science (Mathematics & Physics) — Pwani University (2015)</p>
-
-                    <h2>Experience &amp; Leadership</h2>
-                    <p>Physics & Mathematics Teacher
-St. Anne’s Girls Secondary School, Nairobi
-2018 – Present · Teachers Service Commission
-
-Head of Science Department
-Pope Paul Junior Seminary
-2018
-
-Head of Science
-Kaketi Mixed Day Secondary School
-2015 – 2018
-
-Former Aspirant — Organizing Secretary (Nairobi Branch)
-KUPPET (Kenya Union of Post Primary Education Teachers)
-Contested January 31, 2026
-Advocated for tech-driven and transparent governance systems
-
-Nairobi Region Patron — Action Group
-Wildlife Clubs & Plastic Waste Control
-Leads environmental education and recycling initiatives
-
-Conference Presenter
-ICMRP International Conference
-2023</p>
-                </div>
-                <img src="teaching.jpg" alt="Teaching" class="section-img-large">
-            </div>
-        </section>
-
-        <section id="services" class="section">
-            <div class="section-flex" style="border-bottom:4px solid #007BFF;">
-                <div class="section-content">
-                    <h2>Manifesto — Mwalimu National DT SACCO Delegate</h2>
-                    <hr style="border:1px solid #007BFF;width:40%;margin:0.5rem auto;">
-                    <p><strong>Manifesto priorities</strong></p>
-                    <ul class="manifesto-bullets">
-                        <li>Digital Transformation — improve mobile banking, faster loan processing, and reduce paperwork.</li>
-                        <li>Financial Empowerment — promote digital financial literacy, savings culture, and investment awareness.</li>
-                        <li>Member Representation — collect, document, and present members’ views for SACCO decisions.</li>
-                        <li>Transparency &amp; Accountability — clear communication of decisions, performance, and policies.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="vision" class="section"></section>
-        <section id="manifesto" class="section"></section>
-        <section id="education" class="section"></section>
-        <section id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/classroom.png" alt="Teaching"><h3>St. Anne’s Girls Secondary School</h3><p>Physics &amp; Mathematics Teacher (2018–Present)</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/classroom.png" alt="Seminary"><h3>Pope Paul Junior Seminary</h3><p>Head of Science Department (2018)</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/classroom.png" alt="Kaketi"><h3>Kaketi Mixed Day Secondary School</h3><p>Head of Science (2015–2018)</p></div>
-            </div>
-        </section>
-        <section id="memberships" class="section"></section>
-        <section id="project-smartskool" class="section"></section>
-        <section id="hobbies" class="section"></section>
-        <section id="final-call" class="section"></section>
-
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/paper.png" alt="Research"><h3>Research Proposal & Academic Support</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/online-support.png" alt="Tutoring"><h3>Math & Physics Tutoring</h3><p>Online & Physical</p></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/pen.png" alt="Instructional Design"><h3>Instructional Design</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/network.png" alt="AI"><h3>AI & Digital Integration</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/learning.png" alt="Digital Literacy"><h3>Digital Literacy & Upskilling</h3></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Projects & Initiatives Section -->
-        <section id="projects" class="section">
-                <div class="section-flex" style="border-bottom:4px solid #18c59b;">
-                <div class="section-content">
-                    <h2>Projects & Initiatives</h2>
-                    <div class="card-grid">
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/elephant.png" alt="Wildlife"><h3>Wildlife Clubs & Plastic Waste Control</h3>  <p>Regional patron, Nairobi Region Patron Action Group. Coordinates environmental education and recycling projects.</p>
-                        <img src="environtmental image.jpg" alt="Environmental Project Image" style="width:100%;height:160px;object-fit:cover;margin-top:0.5rem;border-radius:8px;">
-                        
-                        </div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/hospital.png" alt="St John"><h3>St John’s Ambulance School Clubs</h3><p>Promotes health and discipline awareness through first aid and emergency response education.</p>
-    <img src="st-john.JPG" alt="Hospital/First Aid" style="width:100%;height:160px;object-fit:cover;margin-top:0.5rem;border-radius:8px;">
-</div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/school.png" alt="SmartSkool"><h3>SmartSkool.click</h3><p>Innovative educational app for modern learning. <a href="https://ibconcept.github.io/smartskool/" target="_blank">Learn More</a></p>
-    <img src="smartskool.jpg" alt="School Placeholder" style="width:100%;height:160px;object-fit:cover;margin-top:0.5rem;border-radius:8px;">
-</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-flex" style="border-bottom:4px solid #f7b828;">
-                <div class="section-content">
-                    <h2>Skills</h2>
-                    <div class="card-grid">
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/doc.png" alt="Research"><h3>Educational Research & Proposal Writing</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/book.png" alt="Instructional Design"><h3>Instructional Design & Curriculum Development</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/classroom.png" alt="Teaching"><h3>Mathematics & Physics Instruction</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/learning.png" alt="E-learning"><h3>Digital Literacy & E-learning Platforms</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/cyber-security.png" alt="Cyber"><h3>Cyber Services Facilitation</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/web.png" alt="Web"><h3>Web Development & Online Publishing</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/artificial-intelligence.png" alt="AI"><h3>AI Integration in Education</h3></div>
-                        <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/forest.png" alt="Environment"><h3>Environmental & Health Club Mobilization</h3></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-          <h2>Achievements</h2>
-        <section id="achievements" class="section">
-            <div class="card-grid">
-              
-                
-                <div class="card card-highlight" style="border-bottom:4px solid #f7b828;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="AI">
-                    <h3>AI-Augmented Professional Development Certification</h3>
-                </div>
-
-                <div class="card card-highlight" style="border-bottom:4px solid #f7b828;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="Award">
-                    <h3>Recognition Award for Global Tuition-Free Education Promotion</h3>
-                </div>
-                    <div class="card"  style="border-bottom:4px solid #18c59b;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="Scrabble">
-                    <h3>Facilitator, Nairobi Youth Scrabble Tournament (Scrabble Kenya)</h3>
-                </div>
-                <div class="card"  style="border-bottom:4px solid #f7b828;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="Congress">
-                    <h3>Congressperson, Pwani University Students Association (PUSA)</h3>
-                </div>
-                <div class="card"  style="border-bottom:4px solid #007BFF;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="Presenter">
-                    <h3>Presenter, ICMRP 2023 Conference</h3>
-                </div>
-                <div class="card" style="border-bottom:4px solid #007BFF;">
-                    <img src="https://img.icons8.com/ios-filled/50/007BFF/prize.png" alt="CCNA">
-                    <h3>CCNA Certified (Introduction to Networks – Cisco)</h3>
-                </div>
-            </div>
-        </section>
-
-        <section id="vision" class="section">
-            <div class="section-flex vision" style="border-bottom:4px solid #18c59b;">
-                <div class="section-content">
-        <h2>Vision</h2>
-                    <hr style="border:1px solid #18c59b;width:40%;margin:0.5rem auto;">
-                    <p>Dominic Mutuku Mutua is a dedicated educationist committed to financial empowerment, transparency, and member-first SACCO governance—bringing a practical, tech-driven approach to Mwalimu National DT SACCO (2027).</p>
-                </div>
-                <img src="vision.jpg" alt="Vision" class="section-img-large">
-            </div>
-        </section>
-        <section id="manifesto" class="section">
-            <div class="section-flex">
-                <div class="section-content">
-                    <h2>Manifesto — Mwalimu National DT SACCO Delegate</h2>
-                    <hr style="border:1px solid #f7b828;width:40%;margin:0.5rem auto;">
-                    <ul class="manifesto-bullets manifesto-compact">
-                        <li><strong>Digital Transformation</strong> — improved mobile banking, faster loan processing, and reduced paperwork.</li>
-                        <li><strong>Financial Empowerment</strong> — digital financial literacy, savings culture, and investment awareness.</li>
-                        <li><strong>Member Representation</strong> — collect, document, and present members’ views and concerns.</li>
-                        <li><strong>Transparency & Accountability</strong> — clear, timely communication of decisions, financial performance, and policies.</li>
-                    </ul>
-                </div>
-                <img src="manifesto.jpg" alt="Manifesto" class="section-img-large">
-            </div>
-            <div class="card-grid">
-<h3>Digital Transformation</h3>
-style="border-bottom: 4px solid linear-gradient(90deg, #007BFF, #18c59b);"
-                <div class="card" style="border-bottom: 4px solid #f7b828;"><img src="https://img.icons8.com/ios-filled/50/007BFF/handshake.png" alt="Representation"><h3>3. Strong Member Representation</h3><p>Commit to actively collecting, documenting, and presenting members’ views and concerns—ensuring every voice contributes to SACCO decision-making.</p></div>
-                <div class="card" style="border-bottom: 4px solid linear-gradient(90deg, #f7b828, #007BFF);"><img src="https://img.icons8.com/ios-filled/50/007BFF/paper.png" alt="Transparency"><h3>4. Transparency & Accountability</h3><p>Champion clear, timely communication of SACCO decisions, financial performance, and policies—because informed members are empowered members.</p></div>
-            </div>
-        </section>
-        <section id="education" class="section">
-            <h2>Education Background</h2>
-            <div class="card-grid">
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/graduation-cap.png" alt="MSc"><h3>MSc. In ICT Integration in Education and Instructional Design 
-
-                </h3><p>Jomo Kenyatta University of Agriculture and Technology (2025)</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/graduation-cap.png" alt="MEd"><h3>M.Ed. Advanced Teaching</h3><p>University of the People, USA (2023)</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/graduation-cap.png" alt="BEd"><h3>B.Ed. (Science)</h3><p>Pwani University (2015) | Mathematics & Physics</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/school.png" alt="Secondary"><h3>Secondary</h3><p>Mbaikini High School (2009)</p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/school.png" alt="Primary"><h3>Primary</h3><p>Mutanda Primary School (2005)</p></div>
-            </div>
-        </section>
-        <section id="publications" class="section">
-            <div class="section-flex" style="border-bottom:4px solid #18c59b;">
-                <div class="section-content">
-                    <h2 style="margin:0;">Publications</h2>
-                    <hr style="border:1px solid #18c59b;width:40%;margin:0.5rem auto;">
-                    <div class="card-grid">
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>YouTube-based Virtual Lab Learning</h3><p><a href="https://doi.org/10.36227/techrxiv.173750141.17407413/v1" target="_blank">Read</a></p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>Math Memes in Kenya Education</h3><p><a href="https://doi.org/10.1109/te.2023.3346990" target="_blank">Read</a></p></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/open-book--v2.png" alt="Publication"><h3>Multimedia Math Memes in Classrooms</h3><p><a href="https://doi.org/10.15379/ijmst.v10i1.2691" target="_blank">Read</a></p></div>
-            </div>
-        </section>
+    <!-- Compact Clean Hero Section (LHS: Light/Ice Green Background, Not Dark Green) -->
+    <header id="about" class="section pt-16 pb-8 md:pt-18 md:pb-10 lg:py-12 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative overflow-hidden transition-all duration-300">
+        <div class="absolute -top-32 -right-32 w-80 h-80 bg-ice-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-ice-600/5 rounded-full blur-3xl"></div>
         
-        <section id="memberships" class="section">
-            <h2>Membership in Certified Bodies</h2>
-            <div class="card-grid">
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/checked-checkbox.png" alt="TSC"><h3>Teachers Service Commission (TSC)</h3></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/checked-checkbox.png" alt="IFERP"><h3>Institute for Engineering Research and Publication (IFERP)</h3></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/checked-checkbox.png" alt="IEEE"><h3>Former IEEE Education Society Member</h3></div>
-            </div>
-        </section>
-        <section id="project-smartskool" class="section">
-            <div class="section-flex">
-                <div class="section-content">
-                    <h2>Featured Project: SmartSkool.click</h2>
-                    <h3>SmartSkool.click</h3>
-                    <p>Dominic is spearheading the development of <strong>SmartSkool.click</strong>, an innovative educational app poised to revolutionize learning.</p>
-                    <a href="https://ibconcept.github.io/smartskool/" target="_blank" class="btn">Learn More</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                
+                <!-- Hero Left Column: Compact Copy -->
+                <div class="lg:col-span-7 space-y-2.5">
+                    <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight leading-none text-[var(--text-main)]">
+                        Dominic Mutuku Mutua
+                    </h1>
+                    
+                    <p class="text-[11px] md:text-xs font-medium text-[var(--text-muted)] leading-relaxed max-w-lg">
+                        Tech-driven educationist committed to professional excellence, transparent systems, and member-first leadership. Delivering practical, teacher-centered solutions.
+                    </p>
+                    
+                    <div class="pt-2 border-t border-[var(--border-soft)]">
+                        <h2 class="text-[var(--accent-hover)] font-bold uppercase tracking-wider text-[8px] mb-0.5">About Dominic</h2>
+                        <p class="text-[var(--text-muted)] text-[10px] leading-relaxed">
+                            Dominic Mutuku Mutua is a dedicated educationist, researcher, and digital service provider born in Machakos and raised in Kalawa Ward, Makueni County. Currently based in Nairobi and serving under the Teachers Service Commission (TSC), he brings a strong blend of academic excellence and practical leadership.
+                        </p>
+                        <p class="text-[var(--text-muted)] text-[10px] leading-relaxed mt-1">
+                            Dominic holds an MSc. in ICT Integration in Education and Instructional Design from JKUAT and an M.Ed. in Advanced Teaching from the University of the People (USA). With a solid foundation in Mathematics, Physics, and technology, he is deeply committed to delivering practical, teacher-centered solutions.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2 pt-1.5">
+                        <a href="#manifesto" class="bg-[var(--accent-core)] hover:bg-[var(--accent-hover)] text-white px-3 py-1.5 rounded-lg text-[9px] font-bold shadow transition-all text-center w-full sm:w-auto">Read Manifesto</a>
+                        <a href="#contact" class="bg-[var(--bg-secondary)] hover:bg-[var(--border-soft)] text-[var(--text-main)] px-3 py-1.5 rounded-lg text-[9px] font-semibold transition-all text-center w-full sm:w-auto">Get in Touch</a>
+                    </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="SmartSkool Project" class="section-img-large">
+                
+                <!-- Hero Right Column: Image to the Right -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative max-w-[200px] w-full sm:max-w-[220px]">
+                        <div class="absolute inset-0 bg-ice-500/10 rounded-xl blur-xl opacity-25 transform rotate-3"></div>
+                        <div class="relative bg-[var(--bg-surface)] p-1.5 rounded-xl border border-[var(--border-soft)]">
+                            <img src="mutua.png" alt="Dominic Mutuku Mutua" class="w-full h-auto rounded-lg object-cover bg-[var(--bg-primary)] max-h-56" onerror="this.src='https://placehold.co/400x500/021a17/a3f3df?text=Dominic+Mutuku+Mutua'">
+                            <div class="absolute bottom-2 left-2 right-2 bg-[var(--bg-surface)]/90 backdrop-blur-md p-1.5 rounded-md">
+                                <h3 class="text-[var(--accent-hover)] font-bold text-[9px]">Dominic Mutuku</h3>
+                                <p class="text-[7px] text-[var(--text-muted)] uppercase tracking-wider">Teacher &amp; Professional Aspirant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-        <section id="hobbies" class="section">
-            <h2>Hobbies</h2>
-            <div class="card-grid">
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/elephant.png" alt="Wildlife"><h3>Game drives & wildlife exploration</h3></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/swimming.png" alt="Swimming"><h3>Swimming</h3></div>
-                <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/sport.png" alt="Skating"><h3>Roller skating</h3></div>
+        </div>
+    </header>
+
+    <!-- Alice White Section (`#f0f8ff` for light mode with high-contrast text styles) -->
+    <section id="pillars-section" class="py-6 bg-[#f0f8ff] dark:bg-[var(--bg-secondary)] text-[var(--text-main)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-extrabold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Core Priorities</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Interactive Focus Pillars</h2>
+                <p class="text-[10px] text-[var(--text-muted)]">Hover over or tap any pillar to view its details instantly.</p>
             </div>
-        </section>
-        <section id="final-call" class="section">
-            <h2>Final Call</h2>
-            <p>Dominic Mutuku Mutua — Mwalimu National DT SACCO 2027. Elect the delegate who will champion member-first governance, digital transformation, financial empowerment, and full transparency & accountability.</p>
-        </section>
-    </main>
-    <footer class="section" id="contact">
-        <h2>Contact & Socials</h2>
-        <div class="card-grid">
-            <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/phone.png" alt="Phone"><p>+254 715 077762</p></div>
-            <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/email.png" alt="Email"><p>dominicmutua96@mwalimu.tsc.go.ke</p></div>
-            <div class="card"><img src="https://img.icons8.com/ios-filled/50/007BFF/marker.png" alt="Location"><p>Nairobi CBD</p></div>
+
+            <!-- Tabs Navigation Controls -->
+            <div class="flex flex-col sm:flex-row justify-center items-stretch gap-1.5 max-w-3xl mx-auto">
+                <button onmouseover="switchTab('digital-trans')" onclick="switchTab('digital-trans')" id="tab-digital-trans" class="tab-btn active flex-1 py-2 px-3 rounded-xl border border-[var(--border-soft)] bg-[var(--bg-surface)] hover:bg-[var(--bg-primary)] text-[10px] font-bold text-[var(--text-main)] flex items-center justify-center gap-1.5 transition-all">
+                    <span class="material-icons text-xs">devices</span>
+                    Digital Transformation
+                </button>
+                <button onmouseover="switchTab('prof-growth')" onclick="switchTab('prof-growth')" id="tab-prof-growth" class="tab-btn flex-1 py-2 px-3 rounded-xl border border-[var(--border-soft)] bg-[var(--bg-surface)] hover:bg-[var(--bg-primary)] text-[10px] font-bold text-[var(--text-main)] flex items-center justify-center gap-1.5 transition-all">
+                    <span class="material-icons text-xs">trending_up</span>
+                    Professional Growth
+                </button>
+                <button onmouseover="switchTab('teach-emp')" onclick="switchTab('teach-emp')" id="tab-teach-emp" class="tab-btn flex-1 py-2 px-3 rounded-xl border border-[var(--border-soft)] bg-[var(--bg-surface)] hover:bg-[var(--bg-primary)] text-[10px] font-bold text-[var(--text-main)] flex items-center justify-center gap-1.5 transition-all">
+                    <span class="material-icons text-xs">groups</span>
+                    Teacher Empowerment
+                </button>
+            </div>
+
+            <!-- Consolidated Swapper Content Panel -->
+            <div class="max-w-3xl mx-auto mt-3 bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm min-h-[140px] flex flex-col justify-between">
+                
+                <!-- Digital Transformation Panel content -->
+                <div id="content-digital-trans" class="tab-content block transition-all duration-300">
+                    <h3 class="text-xs font-bold text-[var(--text-main)] flex items-center gap-1 mb-1 border-b border-[var(--border-soft)] pb-1">
+                        <span class="material-icons text-[var(--accent-hover)] text-sm">laptop_mac</span>
+                        Pioneering Modern E-Learning &amp; Classroom Tech
+                    </h3>
+                    <p class="text-[10px] text-[var(--text-muted)] leading-relaxed">
+                        Spearheading classrooms with high-utility virtual systems like <strong class="text-[var(--accent-hover)]">SmartSkool.click</strong> to drive efficiency, automate grading matrices, and optimize content delivery. Dedicated to reducing educational paperwork with responsive software applications.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-2 text-[9px] text-[var(--text-muted)] font-medium">
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Integrated Cisco networks &amp; online publication platforms.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Pioneered educational meme models to curb curriculum anxiety.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> AI deployment for grading and virtual course generation.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Robust, paperless resource pipelines for lesson preparation.</li>
+                    </ul>
+                </div>
+
+                <!-- Professional Growth Panel content -->
+                <div id="content-prof-growth" class="tab-content hidden transition-all duration-300">
+                    <h3 class="text-xs font-bold text-[var(--text-main)] flex items-center gap-1 mb-1 border-b border-[var(--border-soft)] pb-1">
+                        <span class="material-icons text-[var(--accent-hover)] text-sm">school</span>
+                        Lifelong Academic &amp; Pedagogy Excellence
+                    </h3>
+                    <p class="text-[10px] text-[var(--text-muted)] leading-relaxed">
+                        Committed to high-level intellectual research. Arming modern classrooms with methods tested in dual Master's degrees from JKUAT and University of the People (USA). Helping teachers gain access to certifications and technical workshops.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-2 text-[9px] text-[var(--text-muted)] font-medium">
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Published researcher in IEEE &amp; IJMST platforms.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> CCNA &amp; certified AI professional development structures.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Advanced pedagogy models and instructional design frameworks.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Regional presentations detailing tech tools for science instruction.</li>
+                    </ul>
+                </div>
+
+                <!-- Teacher Empowerment Panel content -->
+                <div id="content-teach-emp" class="tab-content hidden transition-all duration-300">
+                    <h3 class="text-xs font-bold text-[var(--text-main)] flex items-center gap-1 mb-1 border-b border-[var(--border-soft)] pb-1">
+                        <span class="material-icons text-[var(--accent-hover)] text-sm">how_to_reg</span>
+                        Member-First Representative Welfare Advocacy
+                    </h3>
+                    <p class="text-[10px] text-[var(--text-muted)] leading-relaxed">
+                        Placing educators' core welfare challenges first. Backing every campaign with transparent representative systems, active grievance collection portals, and clear, timely administrative updates.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-2 text-[9px] text-[var(--text-muted)] font-medium">
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Democratic and fully participatory union governance models.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Transparent communication of resources and professional policies.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Active representation for urban and post-primary teachers.</li>
+                        <li class="flex items-center gap-1"><span class="material-icons text-[var(--accent-core)] text-[10px]">done</span> Mobilizing local clubs for environment, safety, and health.</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-        <div class="socials">
-            <a href="https://twitter.com/MutuaMDominic"><img src="https://img.icons8.com/ios-filled/40/007BFF/twitterx.png" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/dominic-mutua-b8257ab4"><img src="https://img.icons8.com/ios-filled/40/007BFF/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://facebook.com/MutukuDMutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/facebook-new.png" alt="Facebook"></a>
-            <a href="https://instagram.com/dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/instagram-new--v1.png" alt="Instagram"></a>
-            <a href="https://threads.net/@dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/threads.png" alt="Threads"></a>
-            <a href="https://tiktok.com/@dmutuku_mutua"><img src="https://img.icons8.com/ios-filled/40/007BFF/tiktok.png" alt="TikTok"></a>
+    </section>
+
+    <!-- Professional Biography Section (Using Compact Light Background in default view) -->
+    <section id="biography" class="section py-6 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Background</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Professional Biography</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                
+                <!-- Quick Profile Summary Card -->
+                <div class="lg:col-span-5 bg-[var(--bg-surface)] p-4 rounded-xl space-y-3 border border-[var(--border-soft)] shadow-sm">
+                    <h3 class="text-xs font-extrabold text-[var(--text-main)] border-b border-[var(--border-soft)] pb-1">Quick Profile Summary</h3>
+                    
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <span class="material-icons text-[var(--accent-core)] text-sm mt-0.5">business</span>
+                            <div>
+                                <h4 class="text-[7px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Current Employer</h4>
+                                <p class="text-[var(--text-main)] font-bold text-[10px]">Teachers Service Commission (TSC)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-2">
+                            <span class="material-icons text-[var(--accent-core)] text-sm mt-0.5">school</span>
+                            <div>
+                                <h4 class="text-[7px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Highest Qualification</h4>
+                                <p class="text-[var(--text-main)] font-bold text-[10px]">MSc. ICT Integration &mdash; JKUAT (2025)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2">
+                            <span class="material-icons text-[var(--accent-core)] text-sm mt-0.5">workspace_premium</span>
+                            <div>
+                                <h4 class="text-[7px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Second Master's Degree</h4>
+                                <p class="text-[var(--text-main)] font-bold text-[10px]">M.Ed. Advanced Teaching &mdash; University of the People (2023)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2">
+                            <span class="material-icons text-[var(--accent-core)] text-sm mt-0.5">class</span>
+                            <div>
+                                <h4 class="text-[7px] font-bold text-[var(--text-muted)] uppercase tracking-wider">First Degree</h4>
+                                <p class="text-[var(--text-main)] font-bold text-[10px]">B.Ed. Science (Mathematics &amp; Physics) &mdash; Pwani University (2015)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-1">
+                        <img src="teaching.jpg" alt="Teaching" class="w-full h-auto rounded-lg object-cover max-h-32 shadow-sm border border-[var(--border-soft)]" onerror="this.src='https://placehold.co/400x250/021a17/a3f3df?text=Professional+Instruction'">
+                    </div>
+                </div>
+
+                <!-- Timeline details with modern readable colors -->
+                <div class="lg:col-span-7 space-y-3">
+                    <h3 class="text-xs font-extrabold text-[var(--text-main)]">Experience &amp; Leadership Roles</h3>
+                    <div class="relative pl-3 border-l border-[var(--border-soft)] space-y-3.5">
+                        
+                        <div id="experience" class="relative">
+                            <span class="absolute -left-[16px] top-1 bg-[var(--accent-core)] w-2 h-2 rounded-full border-2 border-[var(--bg-primary)]"></span>
+                            <span class="text-[7px] font-bold text-[var(--text-muted)] uppercase tracking-wider">2018 &mdash; PRESENT</span>
+                            <h4 class="text-[11px] font-extrabold text-[var(--text-main)]">Physics &amp; Mathematics Teacher</h4>
+                            <p class="text-[8px] text-[var(--accent-hover)] font-semibold">St. Anne’s Girls Secondary School, Nairobi</p>
+                            <p class="text-[var(--text-muted)] text-[10px] mt-0.5 leading-relaxed">Serving under the Teachers Service Commission (TSC). Pioneering modern instruction delivery and educational tech integration.</p>
+                        </div>
+
+                        <div class="relative">
+                            <span class="absolute -left-[16px] top-1 bg-[var(--accent-hover)] w-2 h-2 rounded-full border-2 border-[var(--bg-primary)]"></span>
+                            <span class="text-[7px] font-bold text-[var(--text-muted)] tracking-wider uppercase">2026</span>
+                            <h4 class="text-[11px] font-extrabold text-[var(--text-main)]">Former Aspirant &mdash; Organizing Secretary (Nairobi Branch)</h4>
+                            <p class="text-[8px] text-[var(--accent-hover)] font-semibold">KUPPET Nairobi</p>
+                            <p class="text-[var(--text-muted)] text-[10px] mt-0.5 leading-relaxed">Contested on January 31, 2026. Championed systemic technological reforms and fully transparent teacher union governance solutions.</p>
+                        </div>
+
+                        <div class="relative">
+                            <span class="absolute -left-[16px] top-1 bg-[var(--accent-core)] w-2 h-2 rounded-full border-2 border-[var(--bg-primary)]"></span>
+                            <span class="text-[7px] font-bold text-[var(--text-muted)] tracking-wider uppercase">2018</span>
+                            <h4 class="text-[11px] font-extrabold text-[var(--text-main)]">Head of Science Department</h4>
+                            <p class="text-[8px] text-[var(--accent-hover)] font-semibold">Pope Paul Junior Seminary</p>
+                            <p class="text-[var(--text-muted)] text-[10px] mt-0.5 leading-relaxed">Oversaw laboratory resources, curriculum delivery guidelines, and spearheaded excellence in science fields.</p>
+                        </div>
+
+                        <div class="relative">
+                            <span class="absolute -left-[16px] top-1 bg-[var(--accent-hover)] w-2 h-2 rounded-full border-2 border-[var(--bg-primary)]"></span>
+                            <span class="text-[7px] font-bold text-[var(--text-muted)] tracking-wider uppercase">2015 &mdash; 2018</span>
+                            <h4 class="text-[11px] font-extrabold text-[var(--text-main)]">Head of Science Department</h4>
+                            <p class="text-[8px] text-[var(--accent-hover)] font-semibold">Kaketi Mixed Day Secondary School</p>
+                            <p class="text-[var(--text-muted)] text-[10px] mt-0.5 leading-relaxed">Supervised pedagogy models, instructional support, and managed regional science Congress participations.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <img src="favicon.ico" alt="Logo" style="width: 50px; height: auto; margin: 1rem 0;">
-        <p class="copyright">&copy; 2025 Mutua Dominic Mutuku. All rights reserved.</p>
-        <p class="site-credit">Site designed and supported by <a href="https://ibconcept.vip" target="_blank" rel="noopener"> <b>ibconcept</b></a></p>
+    </section>
+
+    <!-- Strategic Manifesto Section (Light Compact Style) -->
+    <section id="manifesto" class="section py-6 bg-[var(--bg-surface)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-primary)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Vision &amp; Priorities</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Strategic Manifesto &amp; Priorities</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <!-- Vision Statement Card -->
+            <div id="vision" class="bg-[var(--bg-primary)] p-4 rounded-xl mb-4 max-w-xl mx-auto text-center relative border border-[var(--border-soft)] shadow-sm">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[var(--accent-core)] text-white rounded-full w-6 h-6 flex items-center justify-center shadow">
+                    <span class="material-icons text-xs font-bold">visibility</span>
+                </div>
+                <p class="text-[var(--text-muted)] italic text-[10px] leading-relaxed mt-1">
+                    "To achieve absolute professional empowerment, seamless transparency, and member-first leadership by executing a practical, tech-driven approach to educational support within Nairobi."
+                </p>
+                <div class="mt-2 flex justify-center">
+                    <img src="vision.jpg" alt="Vision Map" class="max-h-24 rounded-lg object-cover w-full max-w-xs border border-[var(--border-soft)]" onerror="this.src='https://placehold.co/500x300/021a17/a3f3df?text=Strategic+Education+Vision'">
+                </div>
+            </div>
+
+            <!-- Pillars Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <!-- Pillar 1 -->
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg border border-[var(--border-soft)] hover:-translate-y-0.5 transition-all">
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-sm">phone_android</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Digital Transformation</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                        Improve virtual learning systems, resources, and reduce paper requirements.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg border border-[var(--border-soft)] hover:-translate-y-0.5 transition-all">
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-sm">account_balance_wallet</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Resource Empowerment</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                        Foster teaching cultures and regular educational upskilling pipelines.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg border border-[var(--border-soft)] hover:-translate-y-0.5 transition-all">
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-sm">groups</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Active Representation</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                        Gather concrete professional concerns, making certain every voice is heard.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg border border-[var(--border-soft)] hover:-translate-y-0.5 transition-all">
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-sm">verified_user</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Transparency &amp; Trust</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                        Deliver clear updates on decisions, and maintain total accountability models.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Blueprint Visual -->
+            <div class="mt-4 flex justify-center">
+                <img src="manifesto.jpg" alt="Manifesto Blueprint" class="max-h-24 rounded-lg object-cover w-full max-w-xs border border-[var(--border-soft)]" onerror="this.src='https://placehold.co/600x350/021a17/a3f3df?text=Teacher+Welfare+Manifesto'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Background Section -->
+    <section id="education" class="section py-6 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Academic Qualifications</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Education Background</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- Education Card 1 -->
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl relative border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <span class="absolute top-3 right-3 bg-[var(--bg-secondary)] text-[var(--text-main)] text-[7px] font-bold px-1.5 py-0.5 rounded">MSc.</span>
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-base">school</span>
+                    </div>
+                    <h3 class="text-[10px] font-extrabold text-[var(--text-main)] mb-0.5">MSc. in ICT Integration &amp; ID</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] font-semibold mb-1">Jomo Kenyatta University (2025)</p>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Advanced research focusing on instructional design workflows, virtual learning models, and systemic institutional technology tools.</p>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl relative border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <span class="absolute top-3 right-3 bg-[var(--bg-secondary)] text-[var(--text-main)] text-[7px] font-bold px-1.5 py-0.5 rounded">M.Ed.</span>
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-base">school</span>
+                    </div>
+                    <h3 class="text-[10px] font-extrabold text-[var(--text-main)] mb-0.5">M.Ed. Advanced Teaching</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] font-semibold mb-1">University of the People, USA (2023)</p>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Globally recognized credentials specializing in international pedagogical styles, systems, and modern cognitive psychology.</p>
+                </div>
+
+                <!-- Education Card 3 -->
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl relative border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <span class="absolute top-3 right-3 bg-[var(--bg-secondary)] text-[var(--text-main)] text-[7px] font-bold px-1.5 py-0.5 rounded">B.Ed.</span>
+                    <div class="w-6 h-6 rounded bg-[var(--accent-core)]/10 text-[var(--accent-hover)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-base">school</span>
+                    </div>
+                    <h3 class="text-[10px] font-extrabold text-[var(--text-main)] mb-0.5">B.Ed. Science</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] font-semibold mb-1">Pwani University (2015) | Math &amp; Physics</p>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Focused specialization in Mathematics and Physics Instruction with strong field-based pedagogy training and standard curriculum designs.</p>
+                </div>
+
+                <!-- Education Card 4 -->
+                <div class="bg-[var(--bg-surface)] p-3.5 rounded-lg border border-[var(--border-soft)] shadow-sm">
+                    <div class="w-6 h-6 rounded bg-[var(--bg-primary)] text-[var(--text-main)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-base">history_edu</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Secondary Education</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] font-semibold mb-1">Mbaikini High School (2009)</p>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Exemplary academic records building a core analytical baseline for higher education.</p>
+                </div>
+
+                <!-- Education Card 5 -->
+                <div class="bg-[var(--bg-surface)] p-3.5 rounded-lg border border-[var(--border-soft)] shadow-sm">
+                    <div class="w-6 h-6 rounded bg-[var(--bg-primary)] text-[var(--text-main)] flex items-center justify-center mb-1.5">
+                        <span class="material-icons text-base">history_edu</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Primary Education</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] font-semibold mb-1">Mutanda Primary School (2005)</p>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Early education foundation shaping disciplined values, academic interests, and critical focus.</p>
+                </div>
+
+                <!-- Dynamic global banner -->
+                <div class="bg-[var(--bg-secondary)] text-[var(--text-main)] p-3.5 rounded-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+                    <div class="absolute inset-0 bg-ice-500/5"></div>
+                    <div class="relative z-10 space-y-0.5">
+                        <h3 class="text-[9px] font-bold text-[var(--accent-hover)] uppercase tracking-wider">Global Tech Standard</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed">
+                            Combining local educational challenges with acquired digital literacy to shape modern classroom pedagogies.
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-1.5 flex items-center gap-1 text-[8px] font-bold text-[var(--accent-hover)]">
+                        <span>Advancing Pedagogy Capabilities</span>
+                        <span class="material-icons text-[10px]">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Skills Section -->
+    <section id="skills" class="section py-6 bg-[var(--bg-surface)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-primary)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Core Strengths</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Professional Competencies</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">find_in_page</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Educational Research</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Research methodology and proposal writing.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">architecture</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Instructional Design</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Curriculum structure &amp; virtual resources.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">calculate</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Math &amp; Physics</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Exceptional pedagogy models for schools.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">tablet_mac</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Digital Literacy</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Managing enterprise learning systems.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">computer</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Cyber Services</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Facilitation of digital portals &amp; services.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">language</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Web Development</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Website and dynamic portal publication.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">psychology</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">AI Integration</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Using advanced AI tools in education.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-lg shadow-sm flex items-start gap-2 border border-[var(--border-soft)]">
+                    <div class="bg-[var(--bg-surface)] text-[var(--accent-hover)] p-1 rounded shrink-0">
+                        <span class="material-icons text-sm">eco</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Club Mobilization</h3>
+                        <p class="text-[9px] text-[var(--text-muted)] leading-relaxed mt-0.5">Environmental conservation &amp; youth activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements Section -->
+    <section id="achievements" class="section py-6 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Milestones</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Key Achievements</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">military_tech</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Credential</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">AI Professional Development</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Certified specialist on deploying generative artificial intelligence assets for pedagogical scaling and modern lesson delivery.</p>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">star</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Recognition</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Global Education Promotion</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Highly praised advocacy for standardizing and scaling democratic, open-license educational resources in East Africa.</p>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">emoji_events</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Leadership</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Youth Scrabble Tournament</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Spearheaded cognitive strategy metrics in alliance with Scrabble Kenya to train high-performing school competitors.</p>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">groups</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Student Unionism</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Congressperson, PUSA</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Elected to serve as a student leader representing academic challenges inside Pwani University Students Association.</p>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">forum</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Expert Presentations</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">Presenter, ICMRP 2023</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Delivered key findings on incorporating advanced tech integrations inside rural Kenyan primary and secondary schools.</p>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-4 rounded-xl border border-[var(--border-soft)] shadow-sm hover:shadow transition-all">
+                    <div class="flex items-center gap-1 mb-1">
+                        <span class="material-icons text-[var(--accent-core)] text-sm">settings_ethernet</span>
+                        <h4 class="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Cisco System</h4>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)] mb-0.5">CCNA Certified</h3>
+                    <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Certified validation for deployment of routing protocols, hardware networks, and complex institutional subnet layouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Publications Section -->
+    <section id="publications" class="section py-6 bg-[var(--bg-surface)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-primary)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Academic Research</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Featured Publications</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="bg-[var(--bg-primary)] p-3.5 rounded-xl shadow-sm flex flex-col justify-between border border-[var(--border-soft)] hover:shadow transition-all">
+                    <div class="space-y-1">
+                        <span class="material-icons text-[var(--accent-core)] text-lg">menu_book</span>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">YouTube-based Virtual Lab Learning</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Exploring dynamic digital video streaming resources to augment and support conventional physical laboratory exercises.</p>
+                    </div>
+                    <div class="pt-2 border-t border-[var(--border-soft)] mt-2 flex items-center justify-between text-[9px]">
+                        <span class="text-[var(--text-muted)] font-semibold">IEEE Platform</span>
+                        <a href="https://doi.org/10.36227/techrxiv.173750141.17407413/v1" target="_blank" class="text-[var(--accent-hover)] font-bold inline-flex items-center gap-0.5 hover:text-[var(--accent-core)]">Read <span class="material-icons text-[10px]">open_in_new</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3.5 rounded-xl shadow-sm flex flex-col justify-between border border-[var(--border-soft)] hover:shadow transition-all">
+                    <div class="space-y-1">
+                        <span class="material-icons text-[var(--accent-core)] text-lg">menu_book</span>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Math Memes in Kenya Education</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Using popular media, digital humor and cultural memes to lower curriculum anxiety and scale classroom concentration.</p>
+                    </div>
+                    <div class="pt-2 border-t border-[var(--border-soft)] mt-2 flex items-center justify-between text-[9px]">
+                        <span class="text-[var(--text-muted)] font-semibold">IEEE Society</span>
+                        <a href="https://doi.org/10.1109/te.2023.3346990" target="_blank" class="text-[var(--accent-hover)] font-bold inline-flex items-center gap-0.5 hover:text-[var(--accent-core)]">Read <span class="material-icons text-[10px]">open_in_new</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3.5 rounded-xl shadow-sm flex flex-col justify-between border border-[var(--border-soft)] hover:shadow transition-all">
+                    <div class="space-y-1">
+                        <span class="material-icons text-[var(--accent-core)] text-lg">menu_book</span>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Multimedia Math Memes</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">Quantitative research detailing structural memory performance curves using visual cognitive hooks in the classroom.</p>
+                    </div>
+                    <div class="pt-2 border-t border-[var(--border-soft)] mt-2 flex items-center justify-between text-[9px]">
+                        <span class="text-[var(--text-muted)] font-semibold">IJMST Journal</span>
+                        <a href="https://doi.org/10.15379/ijmst.v10i1.2691" target="_blank" class="text-[var(--accent-hover)] font-bold inline-flex items-center gap-0.5 hover:text-[var(--accent-core)]">Read <span class="material-icons text-[10px]">open_in_new</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Community Work Section -->
+    <section id="projects" class="section py-6 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Initiatives</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Projects &amp; Community Work</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <!-- Environmental Project Card -->
+                <div class="bg-[var(--bg-surface)] rounded-xl overflow-hidden border border-[var(--border-soft)] shadow-sm flex flex-col justify-between hover:shadow transition-all">
+                    <div class="p-3.5 space-y-1">
+                        <div class="flex items-center gap-1 text-[var(--accent-hover)]">
+                            <span class="material-icons text-sm">eco</span>
+                            <span class="text-[8px] font-bold uppercase tracking-wider">Environmental</span>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Wildlife &amp; Plastic Waste</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                            Serving as the Nairobi Region Patron for the Action Group. Co-coordinating school recycling partnerships and environmental training.
+                        </p>
+                    </div>
+                    <div class="px-3.5 pb-3.5">
+                        <img src="environtmental image.jpg" alt="Wildlife Clubs Project Image" class="w-full h-24 object-cover rounded shadow-sm bg-[var(--bg-primary)]" onerror="this.src='https://placehold.co/400x250/021a17/a3f3df?text=Environmental+Conservation'">
+                    </div>
+                </div>
+
+                <!-- Hospital Club Project Card -->
+                <div class="bg-[var(--bg-surface)] rounded-xl overflow-hidden border border-[var(--border-soft)] shadow-sm flex flex-col justify-between hover:shadow transition-all">
+                    <div class="p-3.5 space-y-1">
+                        <div class="flex items-center gap-1 text-[var(--accent-hover)]">
+                            <span class="material-icons text-sm">medical_services</span>
+                            <span class="text-[8px] font-bold uppercase tracking-wider">Health</span>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">St John’s Ambulance Clubs</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                            Mobilizing youth student structures to instill safety response habits, life skills, rescue training, and health consciousness protocols.
+                        </p>
+                    </div>
+                    <div class="px-3.5 pb-3.5">
+                        <img src="st-john.JPG" alt="St John Ambulance Project Image" class="w-full h-24 object-cover rounded shadow-sm bg-[var(--bg-primary)]" onerror="this.src='https://placehold.co/400x250/021a17/a3f3df?text=First+Aid+Action'">
+                    </div>
+                </div>
+
+                <!-- Edtech Smartskool Project Card -->
+                <div id="project-smartskool" class="bg-[var(--bg-surface)] rounded-xl overflow-hidden border border-[var(--border-soft)] shadow-sm flex flex-col justify-between hover:shadow transition-all">
+                    <div class="p-3.5 space-y-1">
+                        <div class="flex items-center gap-1 text-[var(--accent-hover)]">
+                            <span class="material-icons text-sm">laptop_chromebook</span>
+                            <span class="text-[8px] font-bold uppercase tracking-wider">EdTech Software</span>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">SmartSkool.click Application</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] leading-relaxed">
+                            Dominic is leading development of an advanced classroom engagement portal designed to modernize digital resources for teachers.
+                        </p>
+                    </div>
+                    <div class="px-3.5 pb-3.5 space-y-2">
+                        <img src="smartskool.jpg" alt="Smartskool Application Interface" class="w-full h-24 object-cover rounded shadow-sm bg-[var(--bg-primary)]" onerror="this.src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80'">
+                        <a href="https://ibconcept.github.io/smartskool/" target="_blank" class="block text-center bg-[var(--accent-core)] hover:bg-[var(--accent-hover)] text-white font-semibold py-1 rounded text-[8px] transition-all uppercase tracking-wider">Launch SmartSkool App</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliated Memberships Section -->
+    <section id="memberships" class="section py-6 bg-[var(--bg-surface)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-primary)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Affiliations</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Certified Memberships</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="bg-[var(--bg-primary)] p-3 rounded-xl shadow-sm text-center space-y-0.5 border border-[var(--border-soft)] hover:-translate-y-0.5 transition duration-200">
+                    <div class="w-6 h-6 rounded-full bg-[var(--bg-surface)] text-[var(--accent-hover)] flex items-center justify-center mx-auto">
+                        <span class="material-icons text-sm">card_membership</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)]">Teachers Service Commission</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] uppercase tracking-wider font-semibold">Active TSC Member</p>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-xl shadow-sm text-center space-y-0.5 border border-[var(--border-soft)] hover:-translate-y-0.5 transition duration-200">
+                    <div class="w-6 h-6 rounded-full bg-[var(--bg-surface)] text-[var(--accent-hover)] flex items-center justify-center mx-auto">
+                        <span class="material-icons text-sm">card_membership</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)]">IFERP Group</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] uppercase tracking-wider font-semibold">Institute for Engineering Research</p>
+                </div>
+
+                <div class="bg-[var(--bg-primary)] p-3 rounded-xl shadow-sm text-center space-y-0.5 border border-[var(--border-soft)] hover:-translate-y-0.5 transition duration-200">
+                    <div class="w-6 h-6 rounded-full bg-[var(--bg-surface)] text-[var(--accent-hover)] flex items-center justify-center mx-auto">
+                        <span class="material-icons text-sm">card_membership</span>
+                    </div>
+                    <h3 class="text-[10px] font-bold text-[var(--text-main)]">IEEE Education Society</h3>
+                    <p class="text-[var(--accent-hover)] text-[8px] uppercase tracking-wider font-semibold">Former Active Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section py-6 bg-[var(--bg-primary)] border-b border-[var(--border-soft)] relative transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-4">
+                <span class="text-[var(--accent-hover)] font-bold text-[8px] uppercase tracking-widest bg-[var(--bg-surface)] px-2 py-0.5 rounded-full border border-[var(--border-soft)]">Interests</span>
+                <h2 class="text-sm md:text-base font-extrabold text-[var(--text-main)] mt-1">Hobbies &amp; Personal Life</h2>
+                <div class="w-6 h-0.5 bg-[var(--accent-core)] mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="bg-[var(--bg-surface)] p-3.5 rounded-xl flex items-center gap-2.5 border border-[var(--border-soft)] shadow-sm">
+                    <div class="bg-[var(--bg-secondary)] text-[var(--text-main)] p-1.5 rounded shrink-0">
+                        <span class="material-icons text-sm">nature_people</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Game Drives</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] mt-0.5">Exploring rich Kenyan wildlife &amp; nature reserves.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-3.5 rounded-xl flex items-center gap-2.5 border border-[var(--border-soft)] shadow-sm">
+                    <div class="bg-[var(--bg-secondary)] text-[var(--text-main)] p-1.5 rounded shrink-0">
+                        <span class="material-icons text-sm">pool</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Swimming</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] mt-0.5">Recreational swimming &amp; basic water aerobics.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--bg-surface)] p-3.5 rounded-xl flex items-center gap-2.5 border border-[var(--border-soft)] shadow-sm">
+                    <div class="bg-[var(--bg-secondary)] text-[var(--text-main)] p-1.5 rounded shrink-0">
+                        <span class="material-icons text-sm">skateboarding</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[10px] font-bold text-[var(--text-main)]">Roller Skating</h3>
+                        <p class="text-[var(--text-muted)] text-[9px] mt-0.5">Active street skating and hobbyist exercises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Call to Action -->
+    <section id="final-call" class="section py-8 bg-[var(--bg-secondary)] text-[var(--text-main)] relative overflow-hidden transition-all duration-300">
+        <div class="absolute inset-0 bg-black/5 dark:bg-white/5"></div>
+        <div class="absolute -top-12 -right-12 w-40 h-40 bg-[var(--accent-core)]/10 rounded-full blur-2xl"></div>
+        <div class="max-w-2xl mx-auto px-4 text-center relative z-10 space-y-2">
+            <span class="text-[var(--accent-hover)] font-extrabold text-[9px] uppercase tracking-widest">Support Progressive Education</span>
+            <h2 class="text-base md:text-lg font-bold tracking-tight">Partner with Dominic Mutuku Mutua</h2>
+            <p class="text-[var(--text-muted)] text-[10px] leading-relaxed max-w-lg mx-auto">
+                Join a visual network championing tech-driven classroom systems, solid digital literacy programs, total accountability, and active local representation across Nairobi.
+            </p>
+            <div class="pt-1.5">
+                <a href="#contact" class="inline-block bg-[var(--accent-core)] text-white font-bold px-4 py-1.5 rounded-lg text-[9px] shadow hover:bg-[var(--accent-hover)] transition-all uppercase tracking-wider">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Social Footer System -->
+    <footer class="section pt-8 pb-6 bg-[var(--bg-surface)] border-t border-[var(--border-soft)] text-[var(--text-main)] transition-all duration-300" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-6 border-b border-[var(--border-soft)]">
+                
+                <!-- Footer Left Profile Column -->
+                <div class="lg:col-span-5 space-y-2.5">
+                    <div class="flex items-center space-x-2">
+                        <img src="favicon.ico" alt="Logo" class="w-7 h-7 object-contain rounded-lg" onerror="this.src='https://placehold.co/48x48/14b8a6/ffffff?text=D'">
+                        <div>
+                            <span class="text-[var(--text-main)] font-extrabold text-xs tracking-tight block uppercase">DOMINIC MUTUKU</span>
+                            <span class="block text-[8px] text-[var(--accent-hover)] font-medium">Teacher &amp; Researcher</span>
+                        </div>
+                    </div>
+                    <p class="text-[var(--text-muted)] text-[10px] leading-relaxed max-w-xs">
+                        Committed to progressive welfare through solid digital innovations, accountability workflows, and dedicated service delivery across Nairobi.
+                    </p>
+                    
+                    <div class="bg-[var(--bg-primary)] p-3 rounded-lg space-y-2 border border-[var(--border-soft)]">
+                        <h4 class="text-[8px] font-bold text-[var(--accent-hover)] uppercase tracking-widest">Direct Contact Channels</h4>
+                        <div class="space-y-1 text-[10px] text-[var(--text-main)]">
+                            <div class="flex items-center gap-1.5">
+                                <span class="material-icons text-[var(--accent-core)] text-xs">phone</span>
+                                <a href="tel:+254715077762" class="hover:text-[var(--accent-core)] transition">+254 715 077762</a>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="material-icons text-[var(--accent-core)] text-xs">mail</span>
+                                <a href="mailto:dominicmutua96@mwalimu.tsc.go.ke" class="hover:text-[var(--accent-core)] transition truncate block">dominicmutua96@mwalimu.tsc.go.ke</a>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="material-icons text-[var(--accent-core)] text-xs">location_on</span>
+                                <span>Nairobi CBD, Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Right Social Channels -->
+                <div class="lg:col-span-7 space-y-2">
+                    <h3 class="text-xs font-bold text-[var(--text-main)] border-b border-[var(--border-soft)] pb-1">Digital Campaign &amp; Social HQ</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        
+                        <!-- X (Twitter) -->
+                        <a href="https://twitter.com/MutuaMDominic" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-black flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx.png" alt="X" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">X (Twitter)</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">@MutuaMDominic</span>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/dominic-mutua-b8257ab4" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-[#0077b5] flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">LinkedIn</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">Dominic Mutua</span>
+                            </div>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://facebook.com/MutukuDMutua" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-[#1877f2] flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Facebook</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">Mutuku D Mutua</span>
+                            </div>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/dmutuku_mutua" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new--v1.png" alt="Instagram" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Instagram</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">@dmutuku_mutua</span>
+                            </div>
+                        </a>
+
+                        <!-- Threads -->
+                        <a href="https://threads.net/@dmutuku_mutua" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-neutral-950 flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/threads.png" alt="Threads" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Threads</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">@dmutuku_mutua</span>
+                            </div>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://tiktok.com/@dmutuku_mutua" target="_blank" class="flex items-center gap-2 bg-[var(--bg-primary)] p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition group border border-[var(--border-soft)] shadow-sm">
+                            <div class="w-5 h-5 rounded bg-black flex items-center justify-center shrink-0">
+                                <img src="https://img.icons8.com/ios-filled/24/ffffff/tiktok.png" alt="TikTok" class="w-2.5 h-2.5">
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-[7px] text-[var(--text-muted)] font-bold uppercase tracking-wider">TikTok</span>
+                                <span class="text-[10px] font-semibold text-[var(--text-main)] group-hover:text-[var(--accent-hover)] transition truncate block">@dmutuku_mutua</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Credits with subtle layout styling -->
+            <div class="pt-3.5 flex flex-col md:flex-row items-center justify-between text-[8px] text-[var(--text-muted)] space-y-1.5 md:space-y-0">
+                <p>&copy; 2026 Mutua Dominic Mutuku. All rights reserved.</p>
+                <p>
+                    Site designed and supported by <a href="https://ibconcept.vip" target="_blank" rel="noopener" class="text-[var(--accent-hover)] hover:underline font-bold">ibconcept</a>
+                </p>
+            </div>
+
+        </div>
     </footer>
+
+    <!-- Interactive Scripts for dynamic state handling -->
     <script>
+        // Check local storage for theme status, otherwise default to Light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+            updateToggleIcons(true);
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+            updateToggleIcons(false);
+        }
+
+        // Switch theme variables dynamically
+        function toggleDarkMode() {
+            const isDark = document.documentElement.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateToggleIcons(isDark);
+        }
+
+        // Keep icons synchronized on load and switch trigger
+        function updateToggleIcons(isDark) {
+            const deskIcon = document.getElementById('theme-icon');
+            const mobIcon = document.getElementById('theme-icon-mobile');
+            const targetText = isDark ? 'light_mode' : 'dark_mode';
+            if (deskIcon) deskIcon.innerText = targetText;
+            if (mobIcon) mobIcon.innerText = targetText;
+        }
+
         function toggleMenu() {
             const menu = document.getElementById('nav-menu');
-            const isOpen = menu.classList.contains('active');
-            menu.classList.toggle('active');
-            if (!isOpen) {
-              menu.classList.add('nav-open');
+            const isOpen = !menu.classList.contains('hidden');
+            
+            if (isOpen) {
+                menu.classList.add('hidden');
             } else {
-              menu.classList.remove('nav-open');
+                menu.classList.remove('hidden');
             }
         }
 
         function closeMenu() {
             const menu = document.getElementById('nav-menu');
-            if (menu.classList.contains('active')) {
-                menu.classList.remove('active');
-            }
-            menu.classList.remove('nav-open');
+            menu.classList.add('hidden');
         }
 
-        function initDropdowns() {
-            document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-                btn.addEventListener('click', function (e) {
-                    e.stopPropagation();
-
-                    const dropdown = this.closest('.dropdown');
-                    if (!dropdown) return;
-
-                    const isOpen = dropdown.classList.contains('open');
-                    document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-                    dropdown.classList.toggle('open', !isOpen);
-
-                    // Keep aria-expanded in sync
-                    document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(t => t.setAttribute('aria-expanded', 'false'));
-                    btn.setAttribute('aria-expanded', String(!isOpen));
-                });
+        // Interactive Tab Switching functionality
+        function switchTab(tabId) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(element => {
+                element.classList.add('hidden');
             });
+            // Show target content
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+
+            // Deactivate all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Activate current button
+            document.getElementById('tab-' + tabId).classList.add('active');
         }
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function (e) {
-            const menu = document.getElementById('nav-menu');
-            const hamburger = document.querySelector('.hamburger');
-            if (!menu || !hamburger) return;
-
-            const clickedInsideMenu = menu.contains(e.target);
-            const clickedHamburger = hamburger.contains(e.target);
-
-            if (menu.classList.contains('active') && !clickedInsideMenu && !clickedHamburger) {
-                closeMenu();
-            }
-
-            // Close any open dropdowns when clicking outside
-            if (!e.target.closest('.dropdown')) {
-                document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-                document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(t => t.setAttribute('aria-expanded', 'false'));
+        // Adjust navigation background shadow on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (nav) {
+                if (window.scrollY > 20) {
+                    nav.classList.add('shadow-md');
+                } else {
+                    nav.classList.remove('shadow-md');
+                }
             }
         });
 
-        initDropdowns();
-
-        // Smooth scroll for internal links
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                const menu = document.getElementById('nav-menu');
-                if (menu.classList.contains('active')) {
-                    menu.classList.remove('active');
+        // Initialize transition triggers on window load
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            const revealOptions = {
+              threshold: 0.05,
+              rootMargin: "0px 0px -50px 0px"
+            };
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(entry => {
+                if(entry.isIntersecting){
+                  entry.target.classList.add('reveal-visible');
+                  observer.unobserve(entry.target);
                 }
+              });
+            }, revealOptions);
+            
+            sections.forEach(section => {
+              section.classList.add('reveal');
+              revealOnScroll.observe(section);
             });
-        });
-
-        // Scroll Reveal Animation (for sections and category/project cards)
-        const revealElements = document.querySelectorAll('.reveal-on-scroll');
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                }
-            });
-        }, observerOptions);
-
-        revealElements.forEach(el => {
-            observer.observe(el);
         });
     </script>
 </body>
